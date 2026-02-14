@@ -2,9 +2,10 @@ import React, { useEffect, useState, useRef } from 'react';
 import FloatingHearts from '../components/FloatingHearts';
 import PageTransition from '../components/PageTransition';
 import NavigationArrow from '../components/NavigationArrow';
+import { CREATOR_NAME, RECIPIENT_NAME } from '../config';
 import './LetterPage.css';
 
-const letterText = `My Dearest Love,
+const letterText = `My Dearest ${RECIPIENT_NAME},
 
 Every morning I wake up, and the very first thought that dances through my mind is you. Your smile — that magical, breathtaking smile — has the power to turn my darkest days into the most beautiful ones.
 
@@ -20,7 +21,8 @@ If I had to choose between breathing and loving you, I would use my last breath 
 
 Today, tomorrow, and for all the tomorrows after that — you are my always.
 
-Forever Yours ♥`;
+Forever Yours,
+${CREATOR_NAME} ♥`;
 
 const LetterPage = () => {
   const [displayedText, setDisplayedText] = useState('');
@@ -70,7 +72,7 @@ const LetterPage = () => {
             </div>
             <div className="envelope__shadow"></div>
           </div>
-          <p className="envelope__label">A Letter From My Heart</p>
+          <p className="envelope__label">A Letter From {CREATOR_NAME}'s Heart</p>
         </div>
       )}
 
@@ -79,8 +81,8 @@ const LetterPage = () => {
           <div className="letter-container">
             <div className="letter-header">
               <div className="letter-seal">♥</div>
-              <h2 className="letter-title">A Letter For You</h2>
-              <p className="letter-subtitle">Written with every beat of my heart</p>
+              <h2 className="letter-title">A Letter For {RECIPIENT_NAME}</h2>
+              <p className="letter-subtitle">Written with every beat of my heart — From {CREATOR_NAME}</p>
             </div>
 
             <div className="letter-paper" ref={textRef}>

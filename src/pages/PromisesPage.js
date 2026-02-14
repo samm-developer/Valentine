@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import FloatingHearts from '../components/FloatingHearts';
 import PageTransition from '../components/PageTransition';
 import NavigationArrow from '../components/NavigationArrow';
+import { CREATOR_NAME } from '../config';
 import './PromisesPage.css';
 
 const promises = [
@@ -112,7 +113,7 @@ const PromisesPage = () => {
                 signed by my soul, and delivered by love itself."
               </p>
               <div className="promises-oath__signature">
-                ~ With All My Love ~
+                ~ With All My Love, {CREATOR_NAME} ~
               </div>
             </div>
           </div>

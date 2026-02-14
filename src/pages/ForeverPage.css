@@ -381,6 +381,14 @@
   color: rgba(255, 248, 240, 0.6);
 }
 
+.celebration__signature {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: var(--rose);
+  margin-top: 24px;
+  letter-spacing: 2px;
+}
+
 /* Navigation */
 .forever-nav {
   display: flex;

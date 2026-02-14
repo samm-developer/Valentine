@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { CREATOR_NAME, RECIPIENT_NAME } from '../config';
 import './Header.css';
 
 const days = [
@@ -96,7 +97,7 @@ const Header = () => {
             ))}
           </div>
           <div className="mobile-menu__footer">
-            <p>"Every day is a celebration of us"</p>
+            <p>Designed by {CREATOR_NAME} for {RECIPIENT_NAME} ♥</p>
           </div>
         </div>
       </div>

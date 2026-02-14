@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import FloatingHearts from '../components/FloatingHearts';
 import PageTransition from '../components/PageTransition';
+import { CREATOR_NAME, RECIPIENT_NAME } from '../config';
 import './LandingPage.css';
 
 const LandingPage = () => {
@@ -45,8 +46,8 @@ const LandingPage = () => {
           </p>
 
           <h1 className={`landing-title ${showContent ? 'show' : ''}`}>
-            <span className="landing-title__line1">To The Most</span>
-            <span className="landing-title__line2">Beautiful Soul</span>
+            <span className="landing-title__line1">For {RECIPIENT_NAME},</span>
+            <span className="landing-title__line2">The Most Beautiful Soul</span>
             <span className="landing-title__line3">In My Universe</span>
           </h1>
 
@@ -75,6 +76,10 @@ const LandingPage = () => {
             <span className="landing-enter__arrow">♥</span>
             <div className="landing-enter__glow"></div>
           </button>
+
+          <p className={`landing-attribution landing-crafted ${showButton ? 'show' : ''}`}>
+            Crafted with ♥ by {CREATOR_NAME} for {RECIPIENT_NAME}
+          </p>
 
           {/* Valentine Week Quick Links */}
           <div className={`landing-week ${showButton ? 'show' : ''}`}>

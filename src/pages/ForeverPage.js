@@ -2,6 +2,7 @@ import React, { useEffect, useState, useCallback } from 'react';
 import FloatingHearts from '../components/FloatingHearts';
 import PageTransition from '../components/PageTransition';
 import NavigationArrow from '../components/NavigationArrow';
+import { CREATOR_NAME, RECIPIENT_NAME } from '../config';
 import './ForeverPage.css';
 
 const ForeverPage = () => {
@@ -162,7 +163,7 @@ const ForeverPage = () => {
 
               <div className={`forever-question ${showQuestion ? 'show' : ''}`}>
                 <h2 className="forever-question__text">
-                  Will You Be My Valentine? 💕
+                  Will You Be My Valentine, {RECIPIENT_NAME}? 💕
                 </h2>
 
                 <div className="forever-buttons">
@@ -233,12 +234,13 @@ const ForeverPage = () => {
               </div>
 
               <div className="celebration__final">
-                <p className="celebration__together">You + Me = ♾️</p>
+                <p className="celebration__together">{RECIPIENT_NAME} + {CREATOR_NAME} = ♾️</p>
                 <p className="celebration__date">14th February 2026</p>
                 <p className="celebration__forever">
                   "This is not the end of a story.<br />
                   This is the beginning of forever."
                 </p>
+                <p className="celebration__signature">— With love, {CREATOR_NAME} ♥</p>
               </div>
             </div>
           )}
