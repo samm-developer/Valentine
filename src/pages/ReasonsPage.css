@@ -1,0 +1,184 @@
+.reasons-page {
+  min-height: 100vh;
+  background: radial-gradient(ellipse at top, #1a0a1e 0%, #0d0510 60%, #050208 100%);
+  position: relative;
+  padding: 60px 20px 80px;
+}
+
+.reasons-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* Header */
+.reasons-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.reasons-header__icon {
+  display: inline-block;
+  font-size: 2rem;
+  color: var(--rose);
+  margin-bottom: 15px;
+  animation: heartbeat 1.5s ease-in-out infinite;
+  filter: drop-shadow(0 0 15px rgba(232, 65, 111, 0.5));
+}
+
+.reasons-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
+  color: var(--cream);
+  margin-bottom: 20px;
+  text-shadow: 0 0 30px rgba(232, 65, 111, 0.2);
+}
+
+.reasons-subtitle {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: rgba(255, 248, 240, 0.6);
+  line-height: 1.8;
+}
+
+.reasons-divider {
+  margin-top: 25px;
+  color: var(--gold);
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+}
+
+/* Grid */
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+/* Card */
+.reason-card {
+  position: relative;
+  background: linear-gradient(135deg, rgba(26, 15, 30, 0.9), rgba(13, 5, 16, 0.95));
+  border: 1px solid rgba(232, 65, 111, 0.1);
+  border-radius: 16px;
+  padding: 35px 25px;
+  text-align: center;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: default;
+}
+
+.reason-card.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.reason-card:hover {
+  transform: translateY(-8px) scale(1.02) !important;
+  border-color: rgba(232, 65, 111, 0.3);
+  box-shadow: 0 20px 60px rgba(232, 65, 111, 0.15);
+}
+
+.reason-card__glow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(232, 65, 111, 0.05) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.reason-card:hover .reason-card__glow {
+  opacity: 1;
+}
+
+.reason-card__number {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.8rem;
+  color: var(--gold);
+  opacity: 0.3;
+  letter-spacing: 2px;
+}
+
+.reason-card__icon {
+  font-size: 2.5rem;
+  margin-bottom: 18px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.reason-card:hover .reason-card__icon {
+  transform: scale(1.2) rotate(-10deg);
+}
+
+.reason-card__title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  color: var(--petal);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.reason-card__text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255, 248, 240, 0.7);
+}
+
+.reason-card__border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--rose), var(--gold), var(--rose));
+  transition: width 0.5s ease;
+}
+
+.reason-card:hover .reason-card__border {
+  width: 100%;
+}
+
+/* Footer Quote */
+.reasons-footer-quote {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.reasons-footer-quote p {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.3rem;
+  color: var(--gold);
+  line-height: 2;
+  opacity: 0.7;
+}
+
+/* Navigation */
+.reasons-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .reasons-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .reasons-grid { grid-template-columns: 1fr; }
+  .reasons-title { font-size: 2.5rem; }
+  .reasons-nav { flex-direction: column; align-items: center; }
+}

@@ -1,0 +1,402 @@
+.forever-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(ellipse at center, #1a0a1e 0%, #0d0510 50%, #050208 100%);
+  position: relative;
+  padding: 60px 20px;
+  overflow: hidden;
+}
+
+.forever-container {
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  z-index: 5;
+  position: relative;
+}
+
+/* Confetti */
+.confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.confetti-piece {
+  position: absolute;
+  top: -20px;
+  animation: confetti-fall linear forwards;
+}
+
+.confetti-circle {
+  border-radius: 50%;
+}
+
+.confetti-rect {
+  border-radius: 2px;
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(0) rotate(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(720deg) scale(0.5);
+    opacity: 0;
+  }
+}
+
+/* Fireworks */
+.firework {
+  position: fixed;
+  z-index: 99;
+  pointer-events: none;
+}
+
+.firework__particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  animation: firework-burst 1s ease-out forwards;
+}
+
+@keyframes firework-burst {
+  0% {
+    transform: rotate(var(--r, 0deg)) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(var(--r, 0deg)) translateY(-80px);
+    opacity: 0;
+  }
+}
+
+.firework__particle:nth-child(1) { --r: 0deg; }
+.firework__particle:nth-child(2) { --r: 30deg; }
+.firework__particle:nth-child(3) { --r: 60deg; }
+.firework__particle:nth-child(4) { --r: 90deg; }
+.firework__particle:nth-child(5) { --r: 120deg; }
+.firework__particle:nth-child(6) { --r: 150deg; }
+.firework__particle:nth-child(7) { --r: 180deg; }
+.firework__particle:nth-child(8) { --r: 210deg; }
+.firework__particle:nth-child(9) { --r: 240deg; }
+.firework__particle:nth-child(10) { --r: 270deg; }
+.firework__particle:nth-child(11) { --r: 300deg; }
+.firework__particle:nth-child(12) { --r: 330deg; }
+
+/* Header */
+.forever-header {
+  margin-bottom: 50px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease 0.3s;
+}
+
+.forever-header.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.forever-sparkle-ring {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 25px;
+}
+
+.sparkle {
+  position: absolute;
+  color: var(--gold);
+  font-size: 0.8rem;
+  animation: sparkle-pulse 2s ease-in-out infinite;
+}
+
+@keyframes sparkle-pulse {
+  0%, 100% { opacity: 0.3; transform: rotate(var(--r, 0deg)) translateY(-45px) scale(0.8); }
+  50% { opacity: 1; transform: rotate(var(--r, 0deg)) translateY(-45px) scale(1.2); }
+}
+
+.forever-heart {
+  font-size: 3rem;
+  animation: heartbeat 1.2s ease-in-out infinite;
+  filter: drop-shadow(0 0 20px rgba(232, 65, 111, 0.5));
+}
+
+.forever-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: var(--cream);
+  margin-bottom: 30px;
+  text-shadow: 0 0 30px rgba(232, 65, 111, 0.2);
+}
+
+.forever-poem {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 2.2;
+  color: rgba(255, 248, 240, 0.7);
+}
+
+.forever-poem p {
+  opacity: 0;
+  animation: fadeInLine 0.8s ease forwards;
+}
+
+.forever-poem p:nth-child(1) { animation-delay: 0.5s; }
+.forever-poem p:nth-child(2) { animation-delay: 1s; }
+.forever-poem p:nth-child(3) { animation-delay: 1.5s; }
+.forever-poem p:nth-child(4) { animation-delay: 2s; }
+
+@keyframes fadeInLine {
+  to { opacity: 1; }
+}
+
+/* Question */
+.forever-question {
+  margin-bottom: 50px;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.forever-question.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.forever-question__text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color: var(--petal);
+  margin-bottom: 40px;
+  text-shadow: 0 0 30px rgba(255, 107, 157, 0.3);
+  animation: glow-text 2s ease-in-out infinite;
+}
+
+@keyframes glow-text {
+  0%, 100% { text-shadow: 0 0 30px rgba(255, 107, 157, 0.3); }
+  50% { text-shadow: 0 0 50px rgba(255, 107, 157, 0.5), 0 0 80px rgba(232, 65, 111, 0.2); }
+}
+
+.forever-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.forever-btn {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.forever-btn--yes {
+  padding: 16px 45px;
+  background: linear-gradient(135deg, var(--rose), var(--deep-rose));
+  color: white;
+  box-shadow: 0 0 30px rgba(232, 65, 111, 0.4);
+  animation: yes-pulse 2s ease-in-out infinite;
+}
+
+@keyframes yes-pulse {
+  0%, 100% { box-shadow: 0 0 30px rgba(232, 65, 111, 0.4); }
+  50% { box-shadow: 0 0 50px rgba(232, 65, 111, 0.6), 0 0 80px rgba(232, 65, 111, 0.2); }
+}
+
+.forever-btn--yes:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 0 60px rgba(232, 65, 111, 0.6);
+}
+
+.forever-btn--no {
+  padding: 12px 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.forever-btn--no:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Celebration */
+.celebration {
+  animation: celebrationEntrance 1s ease-out;
+}
+
+@keyframes celebrationEntrance {
+  0% { opacity: 0; transform: scale(0.5); }
+  50% { transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.celebration__hearts-burst {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.burst-heart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 1.2rem;
+  color: var(--rose);
+  animation: burst 1.5s ease-out forwards;
+}
+
+@keyframes burst {
+  0% { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+  30% { opacity: 1; }
+  100% { transform: translate(-50%, -50%) rotate(var(--r, 0deg)) translateY(-100px) scale(0.5); opacity: 0; }
+}
+
+.celebration__title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  color: var(--gold);
+  margin-bottom: 5px;
+}
+
+.celebration__title--big {
+  font-size: 3.5rem;
+  color: var(--cream);
+  margin-bottom: 25px;
+  text-shadow: 0 0 40px rgba(232, 65, 111, 0.4);
+}
+
+.celebration__emoji-rain {
+  font-size: 2rem;
+  letter-spacing: 10px;
+  margin-bottom: 30px;
+  animation: emoji-bounce 1s ease-in-out infinite;
+}
+
+@keyframes emoji-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.celebration__quote {
+  margin-bottom: 40px;
+}
+
+.celebration__quote p {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 2;
+  color: rgba(255, 248, 240, 0.75);
+}
+
+.celebration__vows {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.vow-card {
+  background: linear-gradient(135deg, rgba(232, 65, 111, 0.1), rgba(194, 24, 91, 0.05));
+  border: 1px solid rgba(232, 65, 111, 0.15);
+  border-radius: 16px;
+  padding: 25px 20px;
+  flex: 1;
+  min-width: 180px;
+  max-width: 200px;
+  transition: all 0.3s ease;
+}
+
+.vow-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(232, 65, 111, 0.3);
+  box-shadow: 0 10px 30px rgba(232, 65, 111, 0.15);
+}
+
+.vow-card span {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.vow-card p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.95rem;
+  color: rgba(255, 248, 240, 0.7);
+  line-height: 1.6;
+}
+
+.celebration__final {
+  margin-top: 20px;
+}
+
+.celebration__together {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: var(--rose);
+  margin-bottom: 10px;
+  text-shadow: 0 0 30px rgba(232, 65, 111, 0.4);
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+.celebration__date {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.9rem;
+  color: var(--gold);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  opacity: 0.6;
+}
+
+.celebration__forever {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 2;
+  color: rgba(255, 248, 240, 0.6);
+}
+
+/* Navigation */
+.forever-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .forever-title { font-size: 2.2rem; }
+  .forever-question__text { font-size: 1.8rem; }
+  .celebration__title { font-size: 1.5rem; }
+  .celebration__title--big { font-size: 2.2rem; }
+  .celebration__together { font-size: 2.2rem; }
+  .forever-nav { flex-direction: column; align-items: center; }
+  .celebration__vows { flex-direction: column; align-items: center; }
+  .vow-card { max-width: 300px; }
+}
