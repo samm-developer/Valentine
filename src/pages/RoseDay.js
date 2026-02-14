@@ -143,7 +143,7 @@ const RoseDay = () => {
                 "If I were to give you a rose for every time I thought of you,
                 you'd be walking through an infinite garden for the rest of your life."
               </p>
-              <span className="special-message__signature">— Your Forever Admirer</span>
+              <span className="special-message__signature">— Rajat</span>
             </div>
           </div>
 

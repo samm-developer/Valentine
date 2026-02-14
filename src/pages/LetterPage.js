@@ -4,7 +4,7 @@ import PageTransition from '../components/PageTransition';
 import NavigationArrow from '../components/NavigationArrow';
 import './LetterPage.css';
 
-const letterText = `My Dearest Love,
+const letterText = `My Dearest Mahima,
 
 Every morning I wake up, and the very first thought that dances through my mind is you. Your smile — that magical, breathtaking smile — has the power to turn my darkest days into the most beautiful ones.
 
@@ -16,11 +16,12 @@ I don't need the stars when I have the sparkle in your eyes. I don't need poetry
 
 They say love makes you weak, but loving you has made me the strongest version of myself. You gave me a reason to believe in magic again.
 
-If I had to choose between breathing and loving you, I would use my last breath to say — I love you.
+If I had to choose between breathing and loving you, I would use my last breath to say — I love you, Mahima.
 
 Today, tomorrow, and for all the tomorrows after that — you are my always.
 
-Forever Yours ♥`;
+Forever Yours,
+Rajat ♥`;
 
 const LetterPage = () => {
   const [displayedText, setDisplayedText] = useState('');
@@ -70,7 +71,7 @@ const LetterPage = () => {
             </div>
             <div className="envelope__shadow"></div>
           </div>
-          <p className="envelope__label">A Letter From My Heart</p>
+          <p className="envelope__label">A Letter From Rajat, For Mahima</p>
         </div>
       )}
 
@@ -79,8 +80,8 @@ const LetterPage = () => {
           <div className="letter-container">
             <div className="letter-header">
               <div className="letter-seal">♥</div>
-              <h2 className="letter-title">A Letter For You</h2>
-              <p className="letter-subtitle">Written with every beat of my heart</p>
+              <h2 className="letter-title">A Letter For Mahima</h2>
+              <p className="letter-subtitle">Written with every beat of Rajat's heart</p>
             </div>
 
             <div className="letter-paper" ref={textRef}>

@@ -117,7 +117,7 @@ const ProposeDay = () => {
                 and every breath I have left in this life.<br /><br />
                 Will you be mine — not just today, but forever?"
               </p>
-              <span className="special-message__signature">— The One Who Chose You</span>
+              <span className="special-message__signature">— Rajat</span>
             </div>
           </div>
 

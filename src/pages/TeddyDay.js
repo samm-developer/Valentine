@@ -109,7 +109,7 @@ const TeddyDay = () => {
                 and I could whisper 'I love you'<br />
                 every time you squeeze me tight."
               </p>
-              <span className="special-message__signature">— Your Cuddle Partner Forever</span>
+              <span className="special-message__signature">— Rajat</span>
             </div>
           </div>
 

@@ -110,7 +110,7 @@ const ChocolateDay = () => {
                 the world has ever unwrapped.<br /><br />
                 But since I can't — here's my heart instead. It's sweeter."
               </p>
-              <span className="special-message__signature">— Your Sweetest Addiction</span>
+              <span className="special-message__signature">— Rajat</span>
             </div>
           </div>
 

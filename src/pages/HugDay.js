@@ -115,7 +115,7 @@ const HugDay = () => {
                 That's me — hugging your soul from wherever I am.<br />
                 Distance means nothing when love is this strong."
               </p>
-              <span className="special-message__signature">— Always Holding You Close</span>
+              <span className="special-message__signature">— Rajat</span>
             </div>
           </div>
 

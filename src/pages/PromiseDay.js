@@ -118,7 +118,7 @@ const PromiseDay = () => {
                 signed by my soul, and delivered by love itself.<br /><br />
                 I promise you — forever is just the beginning."
               </p>
-              <span className="special-message__signature">— Your Promise Keeper</span>
+              <span className="special-message__signature">— Rajat</span>
             </div>
           </div>
 

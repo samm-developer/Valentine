@@ -84,7 +84,7 @@ const ReasonsPage = () => {
         <div className="reasons-container">
           <div className="reasons-header">
             <span className="reasons-header__icon">♥</span>
-            <h1 className="reasons-title">Reasons I Love You</h1>
+            <h1 className="reasons-title">Reasons I Love You, Mahima</h1>
             <p className="reasons-subtitle">
               "I could write a thousand books and still not capture<br />
               all the reasons my heart chose you."
@@ -114,7 +114,8 @@ const ReasonsPage = () => {
           </div>
 
           <div className="reasons-footer-quote">
-            <p>"And if someone asked me to describe love in one word,<br /> I'd simply say your name."</p>
+            <p>"And if someone asked me to describe love in one word,<br /> I'd simply say your name, Mahima."</p>
+            <p className="reasons-signature">— Rajat</p>
           </div>
 
           <div className="reasons-nav">

@@ -112,7 +112,7 @@ const KissDay = () => {
                 every wall I've built comes crashing down —<br />
                 leaving nothing but raw, beautiful, untamed love."
               </p>
-              <span className="special-message__signature">— Lips That Speak Your Name</span>
+              <span className="special-message__signature">— Rajat</span>
             </div>
           </div>
 

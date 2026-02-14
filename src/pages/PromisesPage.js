@@ -112,7 +112,7 @@ const PromisesPage = () => {
                 signed by my soul, and delivered by love itself."
               </p>
               <div className="promises-oath__signature">
-                ~ With All My Love ~
+                ~ With All My Love, Rajat ~
               </div>
             </div>
           </div>

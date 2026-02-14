@@ -65,7 +65,7 @@ const ValentineDay = () => {
   };
 
   const sections = [
-    { icon: '💌', title: 'Love Letter', desc: 'A heartfelt letter, typed word by word from my soul', path: '/letter' },
+    { icon: '💌', title: 'Love Letter', desc: "A heartfelt letter from Rajat's soul — for Mahima", path: '/letter' },
     { icon: '💖', title: 'Reasons I Love You', desc: 'Every reason my heart chose yours, beautifully told', path: '/reasons' },
     { icon: '🤞', title: 'My Promises', desc: 'Vows written in the language of forever', path: '/promises' },
     { icon: '✨', title: 'Grand Finale', desc: 'The final chapter of this love story — for now', path: '/forever' },
@@ -108,7 +108,7 @@ const ValentineDay = () => {
             <>
               {/* Sections to explore */}
               <div className="valentine-explore">
-                <h2 className="valentine-explore__title">Explore Our Love Story</h2>
+                <h2 className="valentine-explore__title">Explore Our Love Story, Mahima</h2>
                 <div className="valentine-explore__grid">
                   {sections.map((sec, i) => (
                     <button
@@ -136,7 +136,7 @@ const ValentineDay = () => {
                 </div>
 
                 <h2 className="valentine-question__text">
-                  Will You Be My Valentine?
+                  Will You Be My Valentine, Mahima?
                 </h2>
 
                 <div className="valentine-buttons">
@@ -185,7 +185,7 @@ const ValentineDay = () => {
               </div>
 
               <div className="vc-final">
-                <p className="vc-together">You + Me = ♾️</p>
+                <p className="vc-together">Rajat + Mahima = ♾️</p>
                 <p className="vc-date">14th February 2026</p>
                 <p className="vc-forever">
                   "This is not the end of a story.<br />

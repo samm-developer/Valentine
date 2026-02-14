@@ -162,7 +162,7 @@ const ForeverPage = () => {
 
               <div className={`forever-question ${showQuestion ? 'show' : ''}`}>
                 <h2 className="forever-question__text">
-                  Will You Be My Valentine? 💕
+                  Will You Be My Valentine, Mahima? 💕
                 </h2>
 
                 <div className="forever-buttons">
@@ -233,7 +233,7 @@ const ForeverPage = () => {
               </div>
 
               <div className="celebration__final">
-                <p className="celebration__together">You + Me = ♾️</p>
+                <p className="celebration__together">Rajat + Mahima = ♾️</p>
                 <p className="celebration__date">14th February 2026</p>
                 <p className="celebration__forever">
                   "This is not the end of a story.<br />

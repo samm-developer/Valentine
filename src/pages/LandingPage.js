@@ -45,8 +45,8 @@ const LandingPage = () => {
           </p>
 
           <h1 className={`landing-title ${showContent ? 'show' : ''}`}>
-            <span className="landing-title__line1">To The Most</span>
-            <span className="landing-title__line2">Beautiful Soul</span>
+            <span className="landing-title__line1">Dear Mahima,</span>
+            <span className="landing-title__line2">To The Most Beautiful Soul</span>
             <span className="landing-title__line3">In My Universe</span>
           </h1>
 
@@ -64,7 +64,11 @@ const LandingPage = () => {
           </p>
 
           <p className={`landing-attribution ${showContent ? 'show' : ''}`}>
-            — Maya Angelou
+            - Rajat
+          </p>
+
+          <p className={`landing-credit ${showButton ? 'show' : ''}`}>
+            Made with love by Rajat, for Mahima ♥
           </p>
 
           <button

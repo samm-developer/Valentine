@@ -39,7 +39,7 @@ const Header = () => {
           {/* Logo */}
           <div className="header__logo" onClick={() => navigate('/')}>
             <span className="header__logo-heart">♥</span>
-            <span className="header__logo-text">Valentine Week</span>
+            <span className="header__logo-text">Rajat ♥ Mahima</span>
           </div>
 
           {/* Desktop Nav */}
@@ -76,7 +76,7 @@ const Header = () => {
         <div className="mobile-menu__overlay" onClick={() => setMenuOpen(false)}></div>
         <div className="mobile-menu__panel">
           <div className="mobile-menu__header">
-            <span className="mobile-menu__title">💕 Valentine Week</span>
+            <span className="mobile-menu__title">💕 Rajat ♥ Mahima</span>
           </div>
           <div className="mobile-menu__items">
             {days.map((day, index) => (
@@ -96,7 +96,7 @@ const Header = () => {
             ))}
           </div>
           <div className="mobile-menu__footer">
-            <p>"Every day is a celebration of us"</p>
+            <p>"Made with love by Rajat, for Mahima"</p>
           </div>
         </div>
       </div>
