@@ -1,0 +1,57 @@
+.quote-card {
+  position: relative;
+  background: linear-gradient(135deg, rgba(26, 15, 30, 0.8), rgba(13, 5, 16, 0.9));
+  border: 1px solid rgba(232, 65, 111, 0.1);
+  border-radius: 20px;
+  padding: 40px 30px 30px;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.quote-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(232, 65, 111, 0.25);
+  box-shadow: 0 20px 50px rgba(232, 65, 111, 0.1);
+}
+
+.quote-card__mark {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4rem;
+  color: var(--accent);
+  opacity: 0.2;
+  line-height: 0.5;
+  margin-bottom: 10px;
+}
+
+.quote-card__text {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: rgba(255, 248, 240, 0.8);
+  margin-bottom: 15px;
+}
+
+.quote-card__author {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.85rem;
+  color: var(--gold);
+  letter-spacing: 2px;
+  opacity: 0.6;
+}
+
+.quote-card__glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.quote-card:hover .quote-card__glow {
+  opacity: 0.5;
+}

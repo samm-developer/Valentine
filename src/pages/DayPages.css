@@ -1,0 +1,744 @@
+/* ===== SHARED DAY PAGE STYLES ===== */
+.day-page {
+  min-height: 100vh;
+  background: radial-gradient(ellipse at top, #1a0a1e 0%, #0d0510 60%, #050208 100%);
+  position: relative;
+  padding-top: 65px; /* header height */
+}
+
+.day-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ===== SECTIONS ===== */
+.day-section {
+  margin-bottom: 70px;
+}
+
+.day-section--intro {
+  max-width: 700px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.day-intro-text {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 2;
+  color: rgba(255, 248, 240, 0.7);
+}
+
+.day-section__title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  color: var(--cream);
+  text-align: center;
+  margin-bottom: 40px;
+  text-shadow: 0 0 25px rgba(232, 65, 111, 0.15);
+}
+
+.day-section__note {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--gold);
+  margin-top: 30px;
+  opacity: 0.6;
+}
+
+/* ===== QUOTES GRID ===== */
+.quotes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.quote-wrapper {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.quote-wrapper.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== ROSE DAY CARDS ===== */
+.rose-petals-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.rose-petal {
+  position: absolute;
+  top: -20px;
+  background: radial-gradient(ellipse, #e8416f, #c2185b);
+  border-radius: 50% 0 50% 50%;
+  opacity: 0.08;
+  animation: fall-petal linear infinite;
+}
+
+@keyframes fall-petal {
+  0% { transform: translateY(-5vh) rotate(0deg) translateX(0); opacity: 0; }
+  10% { opacity: 0.08; }
+  90% { opacity: 0.08; }
+  100% { transform: translateY(110vh) rotate(720deg) translateX(80px); opacity: 0; }
+}
+
+.rose-colors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.rose-color-card {
+  background: linear-gradient(135deg, rgba(26, 15, 30, 0.8), rgba(13, 5, 16, 0.9));
+  border: 1px solid rgba(232, 65, 111, 0.1);
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.rose-color-card.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.rose-color-card:hover {
+  transform: translateY(-8px) scale(1.03) !important;
+  border-color: var(--card-color);
+  box-shadow: 0 15px 40px rgba(232, 65, 111, 0.12);
+}
+
+.rose-color-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--card-color);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.rose-color-card:hover::after {
+  opacity: 0.6;
+}
+
+.rose-color-card__emoji {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
+}
+
+.rose-color-card:hover .rose-color-card__emoji {
+  transform: scale(1.2) rotate(-10deg);
+}
+
+.rose-color-card__name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.3rem;
+  color: var(--cream);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.rose-color-card__meaning {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: rgba(255, 248, 240, 0.6);
+}
+
+/* ===== PROPOSE DAY JOURNEY ===== */
+.propose-journey {
+  position: relative;
+  padding: 20px 0;
+}
+
+.propose-journey__line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(180deg, transparent, var(--rose) 10%, var(--gold) 50%, var(--rose) 90%, transparent);
+  transform: translateX(-50%);
+}
+
+.propose-step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  position: relative;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.propose-step.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.propose-step__marker {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(135deg, var(--dark), #1a0f1e);
+  border: 2px solid #e040fb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 0 20px rgba(224, 64, 251, 0.3);
+  transition: all 0.3s ease;
+}
+
+.propose-step:hover .propose-step__marker {
+  transform: translateX(-50%) scale(1.15);
+  box-shadow: 0 0 30px rgba(224, 64, 251, 0.5);
+}
+
+.propose-step__icon {
+  font-size: 1.2rem;
+}
+
+.propose-step__card {
+  width: 42%;
+  background: linear-gradient(135deg, rgba(26, 15, 30, 0.9), rgba(13, 5, 16, 0.95));
+  border: 1px solid rgba(224, 64, 251, 0.1);
+  border-radius: 16px;
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+.propose-step:nth-child(even) .propose-step__card {
+  margin-left: auto;
+}
+
+.propose-step:hover .propose-step__card {
+  border-color: rgba(224, 64, 251, 0.25);
+  box-shadow: 0 10px 30px rgba(224, 64, 251, 0.08);
+}
+
+.propose-step__number {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.75rem;
+  color: var(--gold);
+  letter-spacing: 3px;
+  opacity: 0.5;
+}
+
+.propose-step__title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.4rem;
+  color: #e040fb;
+  margin: 6px 0 10px;
+  font-weight: 600;
+}
+
+.propose-step__text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 248, 240, 0.7);
+}
+
+/* ===== CHOCOLATE DAY CARDS ===== */
+.chocolate-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.chocolate-card {
+  background: linear-gradient(135deg, rgba(26, 15, 30, 0.8), rgba(13, 5, 16, 0.9));
+  border: 1px solid rgba(121, 85, 72, 0.15);
+  border-radius: 16px;
+  padding: 30px 22px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.chocolate-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.chocolate-card:hover {
+  transform: translateY(-8px) !important;
+  border-color: rgba(121, 85, 72, 0.3);
+  box-shadow: 0 15px 40px rgba(121, 85, 72, 0.15);
+}
+
+.chocolate-card__emoji {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.chocolate-card:hover .chocolate-card__emoji {
+  transform: scale(1.2) rotate(10deg);
+}
+
+.chocolate-card__name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.3rem;
+  color: #d7ccc8;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.chocolate-card__meaning {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: rgba(255, 248, 240, 0.6);
+}
+
+.chocolate-card__drip {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--choc-color), transparent, var(--choc-color));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.chocolate-card:hover .chocolate-card__drip {
+  opacity: 0.5;
+}
+
+/* ===== TEDDY DAY CARDS ===== */
+.teddy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.teddy-card {
+  background: linear-gradient(135deg, rgba(26, 15, 30, 0.8), rgba(13, 5, 16, 0.9));
+  border: 1px solid rgba(255, 138, 101, 0.1);
+  border-radius: 16px;
+  padding: 30px 22px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.teddy-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.teddy-card:hover {
+  transform: translateY(-8px) !important;
+  border-color: rgba(255, 138, 101, 0.25);
+  box-shadow: 0 15px 40px rgba(255, 138, 101, 0.1);
+}
+
+.teddy-card__icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
+}
+
+.teddy-card:hover .teddy-card__icon {
+  transform: scale(1.2);
+}
+
+.teddy-card__trait {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.3rem;
+  color: #ffab91;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.teddy-card__desc {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: rgba(255, 248, 240, 0.65);
+}
+
+/* ===== PROMISE DAY TIMELINE ===== */
+.promise-timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.promise-timeline__line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(180deg, transparent, #26c6da 10%, var(--gold) 50%, #26c6da 90%, transparent);
+  transform: translateX(-50%);
+}
+
+.promise-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  opacity: 0;
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.promise-card--left {
+  justify-content: flex-start;
+  padding-right: 55%;
+  transform: translateX(-30px);
+}
+
+.promise-card--right {
+  justify-content: flex-end;
+  padding-left: 55%;
+  transform: translateX(30px);
+}
+
+.promise-card.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.promise-card__dot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(135deg, var(--dark), #1a0f1e);
+  border: 2px solid #26c6da;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 0 15px rgba(38, 198, 218, 0.3);
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.promise-card:hover .promise-card__dot {
+  transform: translateX(-50%) scale(1.15);
+  box-shadow: 0 0 25px rgba(38, 198, 218, 0.5);
+}
+
+.promise-card__content {
+  background: linear-gradient(135deg, rgba(26, 15, 30, 0.9), rgba(13, 5, 16, 0.95));
+  border: 1px solid rgba(38, 198, 218, 0.1);
+  border-radius: 16px;
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+.promise-card:hover .promise-card__content {
+  border-color: rgba(38, 198, 218, 0.25);
+  box-shadow: 0 10px 30px rgba(38, 198, 218, 0.08);
+}
+
+.promise-card__label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.8rem;
+  color: #26c6da;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.promise-card__text {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: rgba(255, 248, 240, 0.75);
+  margin-top: 8px;
+}
+
+/* ===== HUG DAY CARDS ===== */
+.hug-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.hug-card {
+  background: linear-gradient(135deg, rgba(26, 15, 30, 0.8), rgba(13, 5, 16, 0.9));
+  border: 1px solid rgba(102, 187, 106, 0.1);
+  border-radius: 20px;
+  padding: 30px 25px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hug-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hug-card:hover {
+  transform: translateY(-6px) !important;
+  border-color: rgba(102, 187, 106, 0.25);
+  box-shadow: 0 15px 40px rgba(102, 187, 106, 0.1);
+}
+
+.hug-card__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.hug-card__emoji {
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.hug-card:hover .hug-card__emoji {
+  transform: scale(1.2);
+}
+
+.hug-card__type {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.4rem;
+  color: #a5d6a7;
+  font-weight: 600;
+}
+
+.hug-card__desc {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: rgba(255, 248, 240, 0.65);
+  margin-bottom: 15px;
+}
+
+.hug-card__when {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.8rem;
+  color: rgba(255, 248, 240, 0.4);
+  border-top: 1px solid rgba(102, 187, 106, 0.1);
+  padding-top: 12px;
+}
+
+.hug-card__when span {
+  color: #66bb6a;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin-right: 5px;
+}
+
+/* ===== KISS DAY CARDS ===== */
+.kiss-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.kiss-card {
+  background: linear-gradient(135deg, rgba(26, 15, 30, 0.8), rgba(13, 5, 16, 0.9));
+  border: 1px solid rgba(239, 83, 80, 0.1);
+  border-radius: 16px;
+  padding: 30px 22px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.kiss-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.kiss-card:hover {
+  transform: translateY(-8px) !important;
+  border-color: rgba(239, 83, 80, 0.25);
+  box-shadow: 0 15px 40px rgba(239, 83, 80, 0.1);
+}
+
+.kiss-card__emoji {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
+}
+
+.kiss-card:hover .kiss-card__emoji {
+  transform: scale(1.2);
+}
+
+.kiss-card__type {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.3rem;
+  color: #ef9a9a;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.kiss-card__desc {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: rgba(255, 248, 240, 0.65);
+}
+
+.kiss-card__lips {
+  position: absolute;
+  bottom: 10px;
+  right: 12px;
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+  transform: scale(0);
+}
+
+.kiss-card:hover .kiss-card__lips {
+  opacity: 0.3;
+  transform: scale(1);
+}
+
+/* ===== SPECIAL MESSAGE ===== */
+.day-section--special {
+  display: flex;
+  justify-content: center;
+}
+
+.special-message {
+  text-align: center;
+  max-width: 600px;
+  padding: 50px 40px;
+  background: linear-gradient(135deg, rgba(232, 65, 111, 0.06), rgba(194, 24, 91, 0.04));
+  border: 1px solid rgba(212, 165, 116, 0.15);
+  border-radius: 24px;
+  position: relative;
+}
+
+.special-message__icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 20px;
+  animation: icon-float 3s ease-in-out infinite;
+}
+
+.special-message__text {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 2;
+  color: rgba(255, 248, 240, 0.75);
+  margin-bottom: 20px;
+}
+
+.special-message__signature {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.3rem;
+  color: var(--gold);
+}
+
+/* ===== DAY NAVIGATION ===== */
+.day-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  gap: 20px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .rose-colors-grid,
+  .chocolate-grid,
+  .teddy-grid,
+  .kiss-grid { grid-template-columns: repeat(2, 1fr); }
+  .hug-grid { grid-template-columns: 1fr; }
+  .quotes-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .day-section__title { font-size: 2rem; }
+  .day-intro-text { font-size: 1rem; }
+  .day-nav { flex-direction: column; align-items: center; }
+  .special-message { padding: 35px 25px; }
+  .special-message__text { font-size: 1rem; }
+
+  /* Timelines go single column on mobile */
+  .propose-journey__line,
+  .promise-timeline__line {
+    left: 25px;
+  }
+
+  .propose-step {
+    flex-direction: row;
+    padding-left: 70px !important;
+    padding-right: 0 !important;
+  }
+
+  .propose-step__marker {
+    left: 25px;
+    width: 38px;
+    height: 38px;
+  }
+
+  .propose-step__card {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  .promise-card--left,
+  .promise-card--right {
+    justify-content: flex-end;
+    padding-left: 70px;
+    padding-right: 0;
+  }
+
+  .promise-card__dot {
+    left: 25px;
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .rose-colors-grid,
+  .chocolate-grid,
+  .teddy-grid,
+  .kiss-grid { grid-template-columns: 1fr; }
+}

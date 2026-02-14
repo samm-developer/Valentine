@@ -6,6 +6,7 @@
   position: relative;
   overflow: hidden;
   background: radial-gradient(ellipse at center, #1a0a1e 0%, #0d0510 50%, #050208 100%);
+  padding-top: 65px;
 }
 
 /* Stars */
@@ -266,6 +267,81 @@
   }
 }
 
+/* Valentine Week Links */
+.landing-week {
+  margin-top: 50px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease 2.5s;
+}
+
+.landing-week.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.landing-week__label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.8rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 18px;
+  opacity: 0.5;
+}
+
+.landing-week__days {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.landing-week__day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--cream);
+  opacity: 0;
+  animation: weekDayAppear 0.5s ease forwards;
+}
+
+@keyframes weekDayAppear {
+  from { opacity: 0; transform: translateY(10px) scale(0.9); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.landing-week__day:hover {
+  background: rgba(232, 65, 111, 0.12);
+  border-color: rgba(232, 65, 111, 0.25);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(232, 65, 111, 0.15);
+}
+
+.landing-week__day-icon {
+  font-size: 1.4rem;
+  transition: transform 0.3s ease;
+}
+
+.landing-week__day:hover .landing-week__day-icon {
+  transform: scale(1.2);
+}
+
+.landing-week__day-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .landing-title.show .landing-title__line1 { font-size: 1.5rem; }
@@ -273,4 +349,7 @@
   .landing-title.show .landing-title__line3 { font-size: 1.8rem; }
   .landing-quote { font-size: 1rem; }
   .landing-enter { padding: 14px 36px; font-size: 1rem; }
+  .landing-week__days { gap: 6px; }
+  .landing-week__day { padding: 8px 10px; }
+  .landing-week__day-icon { font-size: 1.2rem; }
 }

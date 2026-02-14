@@ -1,0 +1,346 @@
+.valentine-page {
+  min-height: 100vh;
+  background: radial-gradient(ellipse at center, #1a0a1e 0%, #0d0510 50%, #050208 100%);
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 80px;
+}
+
+.valentine-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 5;
+}
+
+/* Confetti */
+.vday-confetti-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.vday-confetti {
+  position: absolute;
+  top: -20px;
+  animation: vday-confetti-fall linear forwards;
+}
+
+.vday-confetti-circle { border-radius: 50%; }
+.vday-confetti-rect { border-radius: 2px; }
+
+@keyframes vday-confetti-fall {
+  0% { transform: translateY(0) rotate(0) scale(1); opacity: 1; }
+  100% { transform: translateY(110vh) rotate(720deg) scale(0.5); opacity: 0; }
+}
+
+/* ===== Explore Sections ===== */
+.valentine-explore {
+  margin-bottom: 80px;
+}
+
+.valentine-explore__title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--cream);
+  margin-bottom: 35px;
+}
+
+.valentine-explore__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.valentine-explore__card {
+  position: relative;
+  background: linear-gradient(135deg, rgba(26, 15, 30, 0.8), rgba(13, 5, 16, 0.9));
+  border: 1px solid rgba(232, 65, 111, 0.1);
+  border-radius: 20px;
+  padding: 35px 25px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  color: var(--cream);
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.valentine-explore__card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(232, 65, 111, 0.3);
+  box-shadow: 0 20px 50px rgba(232, 65, 111, 0.12);
+}
+
+.valentine-explore__icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.valentine-explore__card:hover .valentine-explore__icon {
+  transform: scale(1.2);
+}
+
+.valentine-explore__card-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--petal);
+}
+
+.valentine-explore__desc {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.9rem;
+  color: rgba(255, 248, 240, 0.6);
+  line-height: 1.6;
+}
+
+.valentine-explore__arrow {
+  position: absolute;
+  bottom: 15px;
+  right: 18px;
+  font-size: 1.2rem;
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+  color: var(--gold);
+}
+
+.valentine-explore__card:hover .valentine-explore__arrow {
+  opacity: 0.6;
+  transform: translateX(0);
+}
+
+/* ===== The Question ===== */
+.valentine-question {
+  text-align: center;
+  margin-bottom: 50px;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.valentine-question.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.valentine-question__sparkles {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.vq-sparkle {
+  position: absolute;
+  color: var(--gold);
+  font-size: 0.8rem;
+  animation: sparkle-pulse 2s ease-in-out infinite;
+}
+
+@keyframes sparkle-pulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+.vq-heart {
+  font-size: 3.5rem;
+  animation: heartbeat 1.2s ease-in-out infinite;
+  filter: drop-shadow(0 0 25px rgba(232, 65, 111, 0.5));
+}
+
+.valentine-question__text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.8rem;
+  color: var(--petal);
+  margin-bottom: 40px;
+  text-shadow: 0 0 30px rgba(255, 107, 157, 0.3);
+  animation: glow-text 2s ease-in-out infinite;
+}
+
+@keyframes glow-text {
+  0%, 100% { text-shadow: 0 0 30px rgba(255, 107, 157, 0.3); }
+  50% { text-shadow: 0 0 50px rgba(255, 107, 157, 0.5), 0 0 80px rgba(232, 65, 111, 0.2); }
+}
+
+.valentine-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.valentine-btn {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.valentine-btn--yes {
+  padding: 16px 45px;
+  background: linear-gradient(135deg, var(--rose), var(--deep-rose));
+  color: white;
+  box-shadow: 0 0 30px rgba(232, 65, 111, 0.4);
+  animation: yes-pulse 2s ease-in-out infinite;
+}
+
+@keyframes yes-pulse {
+  0%, 100% { box-shadow: 0 0 30px rgba(232, 65, 111, 0.4); }
+  50% { box-shadow: 0 0 50px rgba(232, 65, 111, 0.6), 0 0 80px rgba(232, 65, 111, 0.2); }
+}
+
+.valentine-btn--yes:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 0 60px rgba(232, 65, 111, 0.6);
+}
+
+.valentine-btn--no {
+  padding: 12px 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.valentine-btn--no:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ===== Celebration ===== */
+.valentine-celebration {
+  text-align: center;
+  animation: celebrationEntrance 1s ease-out;
+}
+
+@keyframes celebrationEntrance {
+  0% { opacity: 0; transform: scale(0.5); }
+  50% { transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.vc-burst {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.vc-burst-heart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 1.2rem;
+  color: var(--rose);
+  animation: burst 1.5s ease-out forwards;
+}
+
+@keyframes burst {
+  0% { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+  30% { opacity: 1; }
+  100% { transform: translate(-50%, -50%) rotate(var(--r, 0deg)) translateY(-100px) scale(0.5); opacity: 0; }
+}
+
+.vc-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  color: var(--gold);
+  margin-bottom: 5px;
+}
+
+.vc-title--big {
+  font-size: 3.5rem;
+  color: var(--cream);
+  margin-bottom: 25px;
+  text-shadow: 0 0 40px rgba(232, 65, 111, 0.4);
+}
+
+.vc-emoji {
+  font-size: 2rem;
+  letter-spacing: 10px;
+  margin-bottom: 30px;
+  animation: emoji-bounce 1s ease-in-out infinite;
+}
+
+@keyframes emoji-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.vc-quote {
+  margin-bottom: 40px;
+}
+
+.vc-quote p {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 2;
+  color: rgba(255, 248, 240, 0.75);
+}
+
+.vc-vows {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.vc-vow {
+  background: linear-gradient(135deg, rgba(232, 65, 111, 0.1), rgba(194, 24, 91, 0.05));
+  border: 1px solid rgba(232, 65, 111, 0.15);
+  border-radius: 16px;
+  padding: 25px 20px;
+  flex: 1;
+  min-width: 180px;
+  max-width: 200px;
+  transition: all 0.3s ease;
+}
+
+.vc-vow:hover {
+  transform: translateY(-5px);
+  border-color: rgba(232, 65, 111, 0.3);
+  box-shadow: 0 10px 30px rgba(232, 65, 111, 0.15);
+}
+
+.vc-vow span { font-size: 2rem; display: block; margin-bottom: 10px; }
+.vc-vow p { font-family: 'Cormorant Garamond', serif; font-size: 0.95rem; color: rgba(255, 248, 240, 0.7); line-height: 1.6; }
+
+.vc-final { margin-top: 20px; }
+.vc-together { font-family: 'Great Vibes', cursive; font-size: 3rem; color: var(--rose); margin-bottom: 10px; text-shadow: 0 0 30px rgba(232, 65, 111, 0.4); animation: heartbeat 1.5s ease-in-out infinite; }
+.vc-date { font-family: 'Cormorant Garamond', serif; font-size: 0.9rem; color: var(--gold); letter-spacing: 5px; text-transform: uppercase; margin-bottom: 20px; opacity: 0.6; }
+.vc-forever { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.1rem; line-height: 2; color: rgba(255, 248, 240, 0.6); }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .valentine-explore__grid { grid-template-columns: 1fr; }
+  .valentine-question__text { font-size: 2rem; }
+  .vc-title { font-size: 1.5rem; }
+  .vc-title--big { font-size: 2.2rem; }
+  .vc-together { font-size: 2.2rem; }
+  .vc-vows { flex-direction: column; align-items: center; }
+  .vc-vow { max-width: 300px; }
+}
