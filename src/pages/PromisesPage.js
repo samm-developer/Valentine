@@ -7,7 +7,7 @@ import './PromisesPage.css';
 
 const promises = [
   {
-    promise: "I promise to love you not just when the skies are blue, but especially when the storms arrive — because that's when love truly matters.",
+    promise: "I promise to be there for you not just when the skies are blue, but especially when the storms arrive — because that's when friends matter most.",
     icon: '🌧️',
   },
   {
@@ -15,23 +15,23 @@ const promises = [
     icon: '🎋',
   },
   {
-    promise: "I promise to choose you every single morning, even on the days when love feels like a quiet whisper instead of a roaring fire.",
+    promise: "I promise to have your back every single day, even when life gets busy or we're miles apart — true friendship doesn't fade.",
     icon: '🌅',
   },
   {
-    promise: "I promise to never stop trying to make you laugh — because your happiness is the most important mission of my life.",
+    promise: "I promise to never stop trying to make you laugh — because your happiness matters to me more than you know.",
     icon: '😊',
   },
   {
-    promise: "I promise to hold your hand through every chapter of life — the beautiful ones, the messy ones, and everything in between.",
+    promise: "I promise to stand by you through every chapter of life — the beautiful ones, the messy ones, and everything in between.",
     icon: '🤝',
   },
   {
-    promise: "I promise to grow old with you and still look at you the way I looked at you the very first time — with wonder, with awe, with love.",
+    promise: "I promise to be your friend as we grow older — and still appreciate you the way I did when we first became friends.",
     icon: '🌿',
   },
   {
-    promise: "I promise that no distance, no argument, and no bad day will ever make me love you any less. If anything, they'll make me love you more.",
+    promise: "I promise that no distance, no argument, and no bad day will ever make me care about you any less. If anything, they'll make our bond stronger.",
     icon: '💪',
   },
   {
@@ -76,8 +76,8 @@ const PromisesPage = () => {
             </div>
             <h1 className="promises-title">My Promises To You</h1>
             <p className="promises-subtitle">
-              "Love is not just a feeling — it's a promise<br />
-              I make to you with every breath I take."
+              "Friendship isn't just a word — it's a promise<br />
+              I make to you with every beat of my heart."
             </p>
           </div>
 
@@ -109,11 +109,11 @@ const PromisesPage = () => {
             <div className="promises-oath__card">
               <p className="promises-oath__text">
                 "These are not just words written on a screen —<br />
-                they are the vows of my heart, sealed with every beat,<br />
-                signed by my soul, and delivered by love itself."
+                they are the promises of my heart, sealed with every beat,<br />
+                and delivered with genuine care for our friendship."
               </p>
               <div className="promises-oath__signature">
-                ~ With All My Love, {CREATOR_NAME} ~
+                ~ Your Friend Always, {CREATOR_NAME} ~
               </div>
             </div>
           </div>

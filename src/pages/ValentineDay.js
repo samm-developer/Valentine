@@ -65,10 +65,10 @@ const ValentineDay = () => {
   };
 
   const sections = [
-    { icon: '💌', title: 'Love Letter', desc: 'A heartfelt letter, typed word by word from my soul', path: '/letter' },
-    { icon: '💖', title: 'Reasons I Love You', desc: 'Every reason my heart chose yours, beautifully told', path: '/reasons' },
-    { icon: '🤞', title: 'My Promises', desc: 'Vows written in the language of forever', path: '/promises' },
-    { icon: '✨', title: 'Grand Finale', desc: 'The final chapter of this love story — for now', path: '/forever' },
+    { icon: '💌', title: 'A Letter For You', desc: 'A heartfelt message, typed word by word from my heart', path: '/letter' },
+    { icon: '💖', title: 'Reasons You\'re Amazing', desc: 'Every reason I\'m grateful to call you my friend', path: '/reasons' },
+    { icon: '🤞', title: 'My Promises', desc: 'Promises written in the language of friendship', path: '/promises' },
+    { icon: '✨', title: 'Grand Finale', desc: 'The final chapter of this friendship celebration', path: '/forever' },
   ];
 
   return (
@@ -98,7 +98,7 @@ const ValentineDay = () => {
           icon="❤️"
           date="February 14th"
           title="Valentine's Day"
-          subtitle="The day the world celebrates love — but for me, every day with you is a celebration"
+          subtitle="The day the world celebrates love — and I'm celebrating the gift of your friendship"
           gradient1="#e8416f"
           gradient2="#c2185b"
         />
@@ -108,7 +108,7 @@ const ValentineDay = () => {
             <>
               {/* Sections to explore */}
               <div className="valentine-explore">
-                <h2 className="valentine-explore__title">Explore Our Love Story</h2>
+                <h2 className="valentine-explore__title">Explore Our Friendship</h2>
                 <div className="valentine-explore__grid">
                   {sections.map((sec, i) => (
                     <button
@@ -136,7 +136,7 @@ const ValentineDay = () => {
                 </div>
 
                 <h2 className="valentine-question__text">
-                  Will You Be My Valentine?
+                  Will You Be My Valentine Friend?
                 </h2>
 
                 <div className="valentine-buttons">
@@ -145,7 +145,7 @@ const ValentineDay = () => {
                     onClick={handleYes}
                     style={{ transform: `scale(${yesSize})` }}
                   >
-                    Yes, Forever! ♥
+                    Yes, Always! ♥
                   </button>
                   <button
                     className="valentine-btn valentine-btn--no"
@@ -172,24 +172,24 @@ const ValentineDay = () => {
 
               <div className="vc-quote">
                 <p>
-                  "And in this moment, with your 'yes' echoing in my heart,<br />
-                  I promise you — every day with me will be<br />
-                  Valentine's Day for the rest of our lives."
+                  "With your 'yes' in my heart,<br />
+                  I promise you — I'll always be here for you,<br />
+                  through every chapter of our friendship."
                 </p>
               </div>
 
               <div className="vc-vows">
-                <div className="vc-vow"><span>🌅</span><p>Every sunrise, I'll love you more</p></div>
-                <div className="vc-vow"><span>🌙</span><p>Every moonlit night, I'll hold you closer</p></div>
-                <div className="vc-vow"><span>♾️</span><p>Every heartbeat, forever yours</p></div>
+                <div className="vc-vow"><span>🌅</span><p>Every sunrise, I'll have your back</p></div>
+                <div className="vc-vow"><span>🌙</span><p>Every moonlit night, I'll be here if you need me</p></div>
+                <div className="vc-vow"><span>♾️</span><p>Every step of the way, your friend forever</p></div>
               </div>
 
               <div className="vc-final">
-                <p className="vc-together">You + Me = ♾️</p>
+                <p className="vc-together">Best Friends ♾️</p>
                 <p className="vc-date">14th February 2026</p>
                 <p className="vc-forever">
                   "This is not the end of a story.<br />
-                  This is the beginning of forever."
+                  This is the beginning of a beautiful friendship."
                 </p>
               </div>
             </div>

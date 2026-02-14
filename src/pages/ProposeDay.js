@@ -7,19 +7,19 @@ import NavigationArrow from '../components/NavigationArrow';
 import './DayPages.css';
 
 const proposalSteps = [
-  { step: '01', title: 'The First Glance', text: 'The moment our eyes met, something shifted in the universe. It was as if every star aligned just to bring you into my world.', icon: '👀' },
-  { step: '02', title: 'The First Conversation', text: 'Your words wrapped around my heart like a warm embrace. I knew right then — I wanted to hear your voice for the rest of my life.', icon: '💬' },
-  { step: '03', title: 'The First Smile', text: 'When you smiled at me, time stood still. The whole world faded away, and all I could see was you — glowing, radiant, perfect.', icon: '😊' },
-  { step: '04', title: 'The Realization', text: 'It wasn\'t a thunderbolt. It was a gentle wave that washed over me — the quiet certainty that you were the one my heart had been waiting for.', icon: '💡' },
-  { step: '05', title: 'The Courage', text: 'Every love worth having requires courage. And for you, I would find the courage to cross oceans, climb mountains, and bare my entire soul.', icon: '🦁' },
-  { step: '06', title: 'The Proposal', text: 'So here I am, standing before you with nothing but a heart full of love and a soul that belongs to you. Will you let me love you — today, tomorrow, and forever?', icon: '💝' },
+  { step: '01', title: 'The First Meeting', text: 'The moment our eyes met, something clicked. It was as if the universe knew we were meant to cross paths and become friends.', icon: '👀' },
+  { step: '02', title: 'The First Conversation', text: 'Your words made me feel heard and understood. I knew right then — this was someone I wanted in my corner for life.', icon: '💬' },
+  { step: '03', title: 'The First Laugh', text: 'When we first laughed together, it felt natural. The kind of comfort that only comes when you find your people.', icon: '😊' },
+  { step: '04', title: 'The Realization', text: 'It wasn\'t sudden. It was a gentle certainty — the quiet knowing that you were the kind of friend worth keeping forever.', icon: '💡' },
+  { step: '05', title: 'The Gratitude', text: 'Every great friendship is a gift. And I\'m so grateful the universe brought you into my life — you make everything brighter.', icon: '🦁' },
+  { step: '06', title: 'The Promise', text: 'So here I am, with a heart full of gratitude. I promise to be the friend you deserve — today, tomorrow, and for all our adventures ahead.', icon: '💝' },
 ];
 
 const quotes = [
-  { quote: "I wasn't looking for love when I found you. But love, it seems, had been looking for me — and it led me straight to your heart.", author: "My Confession" },
-  { quote: "They say 'I love you' are three words. But when I say them to you, they carry the weight of a thousand promises and a million tomorrows.", author: "For You Only" },
-  { quote: "I don't just want to be a chapter in your life. I want to be the whole story — the plot twist, the happy ending, and every beautiful page in between.", author: "Your Forever" },
-  { quote: "Before you, I never believed in magic. But then you walked into my life, and I realized — you ARE the magic I'd been searching for.", author: "Spellbound" },
+  { quote: "I wasn't looking for a best friend when I found you. But somehow, you became exactly that — and I'm so glad you did.", author: "My Gratitude" },
+  { quote: "They say 'thank you' are two words. But when I say them to you, they carry the weight of a thousand memories and a million smiles.", author: "For You" },
+  { quote: "I don't just want to be a chapter in your life. I want to be there for every adventure, every laugh, and every moment that matters.", author: "Your Friend" },
+  { quote: "Before you, I didn't know how much a true friend could change things. But then you walked into my life — and everything got better.", author: "Grateful" },
 ];
 
 const ProposeDay = () => {
@@ -50,7 +50,7 @@ const ProposeDay = () => {
           icon="💍"
           date="February 8th"
           title="Propose Day"
-          subtitle="The day I chose you — and I would choose you in a hundred lifetimes"
+          subtitle="The day I celebrate our friendship — and I'd choose you as a friend in a hundred lifetimes"
           gradient1="#9c27b0"
           gradient2="#e040fb"
         />
@@ -58,15 +58,15 @@ const ProposeDay = () => {
         <div className="day-content">
           <div className="day-section day-section--intro">
             <p className="day-intro-text">
-              Love doesn't announce itself with fanfare. It arrives softly,
-              like a whisper in the night, and before you know it — it has rewritten
-              the entire story of your life. This is my story of choosing you.
+              Friendship doesn't announce itself with fanfare. It grows softly,
+              like a seed in good soil, and before you know it — it has become
+              one of the best parts of your life. This is my story of finding you.
             </p>
           </div>
 
           {/* Journey Steps */}
           <div className="day-section">
-            <h2 className="day-section__title">Our Love Story</h2>
+            <h2 className="day-section__title">Our Friendship Story</h2>
             <div className="propose-journey">
               <div className="propose-journey__line"></div>
               {proposalSteps.map((item, i) => (
@@ -92,7 +92,7 @@ const ProposeDay = () => {
 
           {/* Quotes */}
           <div className="day-section">
-            <h2 className="day-section__title">My Heart Speaks</h2>
+            <h2 className="day-section__title">From My Heart</h2>
             <div className="quotes-grid">
               {quotes.map((q, i) => (
                 <div
@@ -113,11 +113,11 @@ const ProposeDay = () => {
               <span className="special-message__icon">💍</span>
               <p className="special-message__text">
                 "I'm not proposing with a ring today.<br />
-                I'm proposing with my entire heart, my every dream,<br />
-                and every breath I have left in this life.<br /><br />
-                Will you be mine — not just today, but forever?"
+                I'm celebrating with my entire heart — grateful for every laugh,<br />
+                every conversation, and every moment we've shared.<br /><br />
+                Here's to us — not just today, but for all our friendship years ahead."
               </p>
-              <span className="special-message__signature">— The One Who Chose You</span>
+              <span className="special-message__signature">— Your Grateful Friend</span>
             </div>
           </div>
 

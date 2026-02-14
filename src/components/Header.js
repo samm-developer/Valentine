@@ -97,7 +97,7 @@ const Header = () => {
             ))}
           </div>
           <div className="mobile-menu__footer">
-            <p>Designed by {CREATOR_NAME} for {RECIPIENT_NAME} ♥</p>
+            <p>Friendship celebration by {CREATOR_NAME} for {RECIPIENT_NAME} ♥</p>
           </div>
         </div>
       </div>

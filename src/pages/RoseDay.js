@@ -16,10 +16,10 @@ const roseColors = [
 ];
 
 const quotes = [
-  { quote: "A single rose can be my garden, a single friend can be my world. But you, my love, are both — my garden and my world.", author: "For You" },
-  { quote: "I'd rather have roses on my table than diamonds on my neck, but I'd rather have you in my heart than anything else in this universe.", author: "With Love" },
-  { quote: "If I had a flower for every time you made me smile, I'd have an endless garden. So here's a rose for every heartbeat you've stolen from me.", author: "Yours Always" },
-  { quote: "Some people search their whole life for a rose without thorns. I found something better — a love that blooms even through the thorns.", author: "Forever Yours" },
+  { quote: "A single rose can be my garden, a single friend can be my world. But you, my friend, are both — my garden and my world.", author: "For You" },
+  { quote: "I'd rather have roses on my table than diamonds on my neck, but I'd rather have you as a friend than any other friend in this universe.", author: "With Gratitude" },
+  { quote: "If I had a flower for every time you made me smile, I'd have an endless garden. So here's a rose for every laugh we've shared.", author: "Your Friend" },
+  { quote: "Some people search their whole life for a rose without thorns. I found something better — a friendship that blooms even through the thorns.", author: "Forever Grateful" },
 ];
 
 const RoseDay = () => {
@@ -76,7 +76,7 @@ const RoseDay = () => {
           icon="🌹"
           date="February 7th"
           title="Rose Day"
-          subtitle="Where love is gifted in shades of roses — a petal at a time"
+          subtitle="Where friendship is celebrated in shades of roses — a petal at a time"
           gradient1="#e8416f"
           gradient2="#c2185b"
         />
@@ -85,8 +85,8 @@ const RoseDay = () => {
           {/* Opening */}
           <div className="day-section day-section--intro">
             <p className="day-intro-text">
-              Every story has a beginning. Ours started the moment I first saw your picture —
-              and just like a rose unfurling in the morning sun, My heart opened to a unique rose.
+              Every friendship has a beginning. Ours started the moment we first connected —
+              and just like a rose unfurling in the morning sun, our bond bloomed into something beautiful.
             </p>
           </div>
 
@@ -112,7 +112,7 @@ const RoseDay = () => {
               ))}
             </div>
             <p className="day-section__note">
-              But for you, I'd give every color — because you deserve all the roses in the universe.
+              But for you, I'd give every color — because you deserve all the appreciation in the universe.
             </p>
           </div>
 
@@ -142,7 +142,7 @@ const RoseDay = () => {
                 "If I were to give you a rose for every time I thought of you,
                 you'd be walking through an infinite garden for the rest of your life."
               </p>
-              <span className="special-message__signature">— Your Forever Admirer</span>
+              <span className="special-message__signature">— Your Friend Always</span>
             </div>
           </div>
 

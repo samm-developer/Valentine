@@ -7,19 +7,19 @@ import NavigationArrow from '../components/NavigationArrow';
 import './DayPages.css';
 
 const chocolateTypes = [
-  { name: 'Dark Chocolate', emoji: '🍫', meaning: 'Deep, intense love — like the way I feel about you at 3 AM', color: '#3e2723' },
-  { name: 'Milk Chocolate', emoji: '🤎', meaning: 'Sweet, comforting love — the way you make ordinary days feel special', color: '#795548' },
-  { name: 'White Chocolate', emoji: '🤍', meaning: 'Pure, innocent love — the butterflies I still get when I see your name', color: '#d7ccc8' },
-  { name: 'Truffle', emoji: '🍬', meaning: 'Luxurious love — because you deserve nothing less than the best of everything', color: '#4e342e' },
-  { name: 'Hazelnut', emoji: '🌰', meaning: 'Surprising love — like finding the best thing when you least expect it', color: '#6d4c41' },
-  { name: 'Caramel Filled', emoji: '✨', meaning: 'Warm, golden love — the kind that melts away all your worries', color: '#bf8040' },
+  { name: 'Dark Chocolate', emoji: '🍫', meaning: 'Deep appreciation — like the way our late-night chats mean everything to me', color: '#3e2723' },
+  { name: 'Milk Chocolate', emoji: '🥛', meaning: 'Sweet, comforting friendship — the way you make ordinary days feel special', color: '#795548' },
+  { name: 'White Chocolate', emoji: '⬜', meaning: 'Pure kindness — the warmth I feel when we catch up after time apart', color: '#d7ccc8' },
+  { name: 'Truffle', emoji: '🍬', meaning: 'Something special — because you deserve nothing less than the best', color: '#4e342e' },
+  { name: 'Hazelnut', emoji: '🌰', meaning: 'A wonderful surprise — like finding an amazing friend when you least expect it', color: '#6d4c41' },
+  { name: 'Caramel Filled', emoji: '✨', meaning: 'Warm, golden friendship — the kind that makes everything feel a little better', color: '#bf8040' },
 ];
 
 const quotes = [
-  { quote: "Life is like a box of chocolates — but you, my love, are the sweetest piece I've ever found. And I plan on savoring every single moment with you.", author: "Sweet Nothings" },
-  { quote: "You're like chocolate — irresistible, addictive, and the one thing I can never get enough of. My cravings for you are infinite.", author: "Craving You" },
-  { quote: "Some people bring chocolate to sweeten the day. You bring yourself — and that's sweeter than any chocolate the world has ever tasted.", author: "My Sweetest" },
-  { quote: "If our love were a chocolate, it would be the kind that melts slowly on your tongue — savored, cherished, and remembered long after it's gone.", author: "Melting Hearts" },
+  { quote: "Life is like a box of chocolates — but you, my friend, are the sweetest piece I've ever found. And I plan on savoring every moment of our friendship.", author: "Sweet Nothings" },
+  { quote: "You're like chocolate — the kind of person I can never get enough of. Our hangouts and conversations? Always leave me wanting more.", author: "Craving More" },
+  { quote: "Some people bring chocolate to sweeten the day. You bring yourself — and that's sweeter than any treat the world has to offer.", author: "My Sweetest Friend" },
+  { quote: "If our friendship were a chocolate, it would be the kind that melts slowly — savored, cherished, and remembered long after the moment passes.", author: "Warm Memories" },
 ];
 
 const ChocolateDay = () => {
@@ -50,7 +50,7 @@ const ChocolateDay = () => {
           icon="🍫"
           date="February 9th"
           title="Chocolate Day"
-          subtitle="Because love should always taste this sweet"
+          subtitle="Because friendship should always taste this sweet"
           gradient1="#795548"
           gradient2="#4e342e"
         />
@@ -58,14 +58,14 @@ const ChocolateDay = () => {
         <div className="day-content">
           <div className="day-section day-section--intro">
             <p className="day-intro-text">
-              They say chocolate releases the same chemicals as falling in love.
-              No wonder every bite reminds me of you — sweet, intoxicating,
-              and utterly impossible to resist.
+              They say chocolate releases the same chemicals that make us feel good.
+              No wonder every bite reminds me of you — sweet, comforting,
+              and the kind of presence that brightens any day.
             </p>
           </div>
 
           <div className="day-section">
-            <h2 className="day-section__title">Every Flavor of Love</h2>
+            <h2 className="day-section__title">Every Flavor of Friendship</h2>
             <div className="chocolate-grid">
               {chocolateTypes.map((choc, i) => (
                 <div
@@ -105,12 +105,12 @@ const ChocolateDay = () => {
             <div className="special-message special-message--chocolate">
               <span className="special-message__icon">🍫</span>
               <p className="special-message__text">
-                "If I could wrap my love in chocolate paper,<br />
-                it would be the most beautiful, most delicious gift<br />
+                "If I could wrap my gratitude in chocolate paper,<br />
+                it would be the most beautiful gift<br />
                 the world has ever unwrapped.<br /><br />
-                But since I can't — here's my heart instead. It's sweeter."
+                But since I can't — here's this message instead. You're the sweetest friend."
               </p>
-              <span className="special-message__signature">— Your Sweetest Addiction</span>
+              <span className="special-message__signature">— Your Grateful Friend</span>
             </div>
           </div>
 

@@ -8,17 +8,17 @@ const reasons = [
   {
     icon: '✨',
     title: 'Your Magical Smile',
-    text: 'The way your smile lights up the room makes even the sun feel jealous. One smile from you, and my entire universe realigns.',
+    text: 'The way your smile lights up the room makes even the sun feel jealous. One smile from you, and my day gets brighter.',
   },
   {
     icon: '🌙',
     title: 'Your Beautiful Soul',
-    text: 'Your kindness isn\'t just a trait — it\'s a superpower. You make everyone around you feel seen, heard, and loved.',
+    text: 'Your kindness isn\'t just a trait — it\'s a superpower. You make everyone around you feel seen, heard, and valued.',
   },
   {
     icon: '🦋',
     title: 'The Way You Laugh',
-    text: 'Your laughter is my favorite melody. It echoes in my heart long after the moment has passed, and I live to hear it again.',
+    text: 'Your laughter is my favorite sound. It echoes in my mind long after the moment has passed, and I live for those moments.',
   },
   {
     icon: '🌹',
@@ -28,27 +28,27 @@ const reasons = [
   {
     icon: '💫',
     title: 'How Safe I Feel',
-    text: 'In your arms, the chaos of the world fades away. You are my calm, my peace, my safe haven in this beautiful mess of life.',
+    text: 'Around you, I can be myself without filters. You are my calm, my safe space, my person in this beautiful mess of life.',
   },
   {
     icon: '🌸',
-    title: 'Your Eyes Tell Stories',
-    text: 'I could get lost in your eyes for eternity. They hold galaxies I want to explore, stories I want to read, and love I want to drown in.',
+    title: 'Your Energy Is Contagious',
+    text: 'Your presence brings a unique warmth. You have a way of making ordinary moments feel special and memorable.',
   },
   {
     icon: '💖',
     title: 'You Believe In Me',
-    text: 'When the whole world doubts me, you stand there with unwavering faith. You see the best version of me even when I can\'t see it myself.',
+    text: 'If the whole world doubts me, you stand there with unwavering faith. You see the best version of me even when I can\'t see it myself.',
   },
   {
     icon: '🌊',
     title: 'Every Little Thing',
-    text: 'The way you scrunch your nose, how you talk in your sleep, your silly jokes — I fell in love with all of it. Every. Single. Thing.',
+    text: 'The way you tell stories, your silly jokes, your perspective on life — I appreciate all of it. Every. Single. Thing.',
   },
   {
     icon: '🔥',
-    title: 'You Are My Home',
-    text: 'Four walls don\'t make a home — you do. Wherever you are is where I belong. You are my address in this vast universe.',
+    title: 'You Make Life Better',
+    text: 'Four walls don\'t make a home — but a good friend makes anywhere feel like one. You add so much to my life.',
   },
 ];
 
@@ -84,10 +84,10 @@ const ReasonsPage = () => {
         <div className="reasons-container">
           <div className="reasons-header">
             <span className="reasons-header__icon">♥</span>
-            <h1 className="reasons-title">Reasons I Love You</h1>
+            <h1 className="reasons-title">Reasons You're An Amazing Friend</h1>
             <p className="reasons-subtitle">
               "I could write a thousand books and still not capture<br />
-              all the reasons my heart chose you."
+              all the reasons I'm grateful for you."
             </p>
             <div className="reasons-divider">
               <span>∞</span>
@@ -114,11 +114,11 @@ const ReasonsPage = () => {
           </div>
 
           <div className="reasons-footer-quote">
-            <p>"And if someone asked me to describe love in one word,<br /> I'd simply say your name."</p>
+            <p>"And if someone asked me to describe a true friend in one word,<br /> I'd simply say your name."</p>
           </div>
 
           <div className="reasons-nav">
-            <NavigationArrow to="/letter" label="Love Letter" direction="left" />
+            <NavigationArrow to="/letter" label="Letter" direction="left" />
             <NavigationArrow to="/promises" label="My Promises" direction="right" />
           </div>
         </div>

@@ -5,23 +5,23 @@ import NavigationArrow from '../components/NavigationArrow';
 import { CREATOR_NAME, RECIPIENT_NAME } from '../config';
 import './LetterPage.css';
 
-const letterText = `My Dearest ${RECIPIENT_NAME},
+const letterText = `My Dear Friend ${RECIPIENT_NAME},
 
-Every morning I wake up, and the very first thought that dances through my mind is you. Your smile — that magical, breathtaking smile — has the power to turn my darkest days into the most beautiful ones.
+I wanted to take a moment to tell you how much you mean to me. Your smile — that warm, genuine smile — has the power to brighten my darkest days. You've been there when I needed someone the most, and for that I'm endlessly grateful.
 
-Before you, I never knew what it meant to find home in someone's eyes. But now I know — home isn't a place, it's wherever you are. In your arms, I have found a peace that the whole world couldn't give me.
+Before you came into my life, I didn't know how much a true friend could matter. But now I do — you're the person I can be myself with, the one who listens without judgment, and the one who makes ordinary moments feel special.
 
-You are not just the love of my life — you are the life of my love. Every heartbeat of mine whispers your name, every dream of mine begins and ends with you.
+You're not just a friend — you're one of the best people I know. Your kindness, your strength, and your laughter have made my life so much richer. Every adventure with you becomes a memory I cherish.
 
-I don't need the stars when I have the sparkle in your eyes. I don't need poetry when your laughter writes the most beautiful verses in my soul. I don't need forever when every moment with you already feels like eternity.
+I don't need grand gestures when I have your friendship. I don't need the world when we're laughing over nothing. I don't need forever promises — our friendship already feels like it will last a lifetime.
 
-They say love makes you weak, but loving you has made me the strongest version of myself. You gave me a reason to believe in magic again.
+They say friends are the family we choose. Well, I'm so glad the universe brought you into my life. You make me want to be a better person.
 
-If I had to choose between breathing and loving you, I would use my last breath to say — I love you.
+If I had to describe what you mean to me in one sentence — I'd say you're the kind of friend everyone wishes they had.
 
-Today, tomorrow, and for all the tomorrows after that — you are my always.
+Today, tomorrow, and for all the tomorrows after that — I'm grateful for you.
 
-Forever Yours,
+Your friend always,
 ${CREATOR_NAME} ♥`;
 
 const LetterPage = () => {
@@ -82,7 +82,7 @@ const LetterPage = () => {
             <div className="letter-header">
               <div className="letter-seal">♥</div>
               <h2 className="letter-title">A Letter For {RECIPIENT_NAME}</h2>
-              <p className="letter-subtitle">Written with every beat of my heart — From {CREATOR_NAME}</p>
+              <p className="letter-subtitle">Written from the heart — From {CREATOR_NAME}</p>
             </div>
 
             <div className="letter-paper" ref={textRef}>

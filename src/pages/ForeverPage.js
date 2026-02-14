@@ -163,7 +163,7 @@ const ForeverPage = () => {
 
               <div className={`forever-question ${showQuestion ? 'show' : ''}`}>
                 <h2 className="forever-question__text">
-                  Will You Be My Valentine, {RECIPIENT_NAME}? 💕
+                  Will You Be My Best Friend Forever, {RECIPIENT_NAME}? 💕
                 </h2>
 
                 <div className="forever-buttons">
@@ -172,7 +172,7 @@ const ForeverPage = () => {
                     onClick={handleYes}
                     style={{ transform: `scale(${yesSize})` }}
                   >
-                    Yes, Forever! ♥
+                    Yes, Always! ♥
                   </button>
                   <button
                     className="forever-btn forever-btn--no"
@@ -212,35 +212,35 @@ const ForeverPage = () => {
 
               <div className="celebration__quote">
                 <p>
-                  "And in this moment, with your 'yes' echoing in my heart,<br />
-                  I promise you — every day with me will be<br />
-                  Valentine's Day for the rest of our lives."
+                  "With your 'yes' in my heart,<br />
+                  I promise you — I'll always be there for you,<br />
+                  through every chapter of our friendship."
                 </p>
               </div>
 
               <div className="celebration__vows">
                 <div className="vow-card">
                   <span>🌅</span>
-                  <p>Every sunrise, I'll love you more</p>
+                  <p>Every sunrise, I'll have your back</p>
                 </div>
                 <div className="vow-card">
                   <span>🌙</span>
-                  <p>Every moonlit night, I'll hold you closer</p>
+                  <p>Every moonlit night, I'll be here if you need me</p>
                 </div>
                 <div className="vow-card">
                   <span>♾️</span>
-                  <p>Every heartbeat, forever yours</p>
+                  <p>Every step of the way, your friend forever</p>
                 </div>
               </div>
 
               <div className="celebration__final">
-                <p className="celebration__together">{RECIPIENT_NAME} + {CREATOR_NAME} = ♾️</p>
+                <p className="celebration__together">{RECIPIENT_NAME} + {CREATOR_NAME} = Best Friends ♾️</p>
                 <p className="celebration__date">14th February 2026</p>
                 <p className="celebration__forever">
                   "This is not the end of a story.<br />
-                  This is the beginning of forever."
+                  This is the beginning of a beautiful friendship."
                 </p>
-                <p className="celebration__signature">— With love, {CREATOR_NAME} ♥</p>
+                <p className="celebration__signature">— Your friend always, {CREATOR_NAME} ♥</p>
               </div>
             </div>
           )}

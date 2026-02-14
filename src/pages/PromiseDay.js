@@ -7,21 +7,21 @@ import NavigationArrow from '../components/NavigationArrow';
 import './DayPages.css';
 
 const promises = [
-  { promise: "I promise to love you not just when the skies are blue, but especially when the storms arrive — because that's when love truly matters.", icon: '🌧️' },
+  { promise: "I promise to be there for you not just when the skies are blue, but especially when the storms arrive — because that's when friends matter most.", icon: '🌧️' },
   { promise: "I promise to be your biggest cheerleader, your loudest fan, and your softest place to land when the world gets too heavy.", icon: '🎋' },
-  { promise: "I promise to choose you every single morning, even on the days when love feels like a quiet whisper instead of a roaring fire.", icon: '🌅' },
-  { promise: "I promise to never stop trying to make you laugh — because your happiness is the most important mission of my life.", icon: '😊' },
-  { promise: "I promise to hold your hand through every chapter — the beautiful ones, the messy ones, and everything in between.", icon: '🤝' },
-  { promise: "I promise to grow old with you and still look at you the way I looked at you the very first time — with wonder, with awe, with love.", icon: '🌿' },
-  { promise: "I promise that no distance, no argument, and no bad day will ever make me love you any less. If anything, they'll make me love you more.", icon: '💪' },
+  { promise: "I promise to have your back every single day, even when life gets busy or we're miles apart — true friendship doesn't fade.", icon: '🌅' },
+  { promise: "I promise to never stop trying to make you laugh — because your happiness matters to me more than you know.", icon: '😊' },
+  { promise: "I promise to stand by you through every chapter — the beautiful ones, the messy ones, and everything in between.", icon: '🤝' },
+  { promise: "I promise to be your friend as we grow older — and still appreciate you the way I did when we first became friends.", icon: '🌿' },
+  { promise: "I promise that no distance, no argument, and no bad day will ever make me care about you any less. If anything, they'll make our bond stronger.", icon: '💪' },
   { promise: "I promise to always remind you how special you are — especially on the days you forget. Because the world is better with you in it.", icon: '⭐' },
 ];
 
 const quotes = [
-  { quote: "A promise from my heart is not just words — it's a contract between my soul and yours. Unbreakable. Eternal. Written in the ink of pure love.", author: "Sealed With Love" },
-  { quote: "I don't promise you a life without storms. I promise you that in every storm, my hand will be the one you hold, and my heart will be your shelter.", author: "Your Safe Harbor" },
-  { quote: "The most beautiful promise isn't 'I'll never hurt you.' It's 'When the world hurts you, I'll be right here — healing every wound with my love.'", author: "Healing Love" },
-  { quote: "I promise to be the reason you believe in forever. Because you, my love, are the reason I already do.", author: "Forever Believer" },
+  { quote: "A promise from my heart is not just words — it's my commitment to our friendship. Unbreakable. Lasting. Written with genuine care.", author: "Sealed With Care" },
+  { quote: "I don't promise you a life without storms. I promise you that in every storm, I'll be there if you need me — a friend you can count on.", author: "Your Safe Harbor" },
+  { quote: "The most beautiful promise isn't 'I'll never hurt you.' It's 'When the world hurts you, I'll be right here — listening, supporting, being your friend.'", author: "Healing Friendship" },
+  { quote: "I promise to be the kind of friend who makes you believe in good people. Because you've already shown me what true friendship looks like.", author: "Forever Grateful" },
 ];
 
 const PromiseDay = () => {
@@ -52,7 +52,7 @@ const PromiseDay = () => {
           icon="🤞"
           date="February 11th"
           title="Promise Day"
-          subtitle="These aren't just words — they're the vows of my heart"
+          subtitle="These aren't just words — they're the promises of my heart"
           gradient1="#26c6da"
           gradient2="#0097a7"
         />
@@ -60,9 +60,9 @@ const PromiseDay = () => {
         <div className="day-content">
           <div className="day-section day-section--intro">
             <p className="day-intro-text">
-              Love is easy to say but hard to prove. So today, I don't just say
-              "I love you" — I make promises. Real ones. The kind that don't fade
-              when the honeymoon phase ends. The kind that last beyond forever.
+              Friendship is easy to say but meaningful when proven. So today, I don't just say
+              "you're my friend" — I make promises. Real ones. The kind that don't fade
+              when life gets busy. The kind that last through every season.
             </p>
           </div>
 
@@ -114,9 +114,9 @@ const PromiseDay = () => {
               <span className="special-message__icon">🤞</span>
               <p className="special-message__text">
                 "These are not just words written on a screen —<br />
-                they are the vows of my heart, sealed with every beat,<br />
-                signed by my soul, and delivered by love itself.<br /><br />
-                I promise you — forever is just the beginning."
+                they are the promises of my heart, sealed with every beat,<br />
+                and delivered with genuine care for our friendship.<br /><br />
+                I promise you — our friendship is just getting started."
               </p>
               <span className="special-message__signature">— Your Promise Keeper</span>
             </div>

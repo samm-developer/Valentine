@@ -47,7 +47,7 @@ const LandingPage = () => {
 
           <h1 className={`landing-title ${showContent ? 'show' : ''}`}>
             <span className="landing-title__line1">For {RECIPIENT_NAME},</span>
-            <span className="landing-title__line2">The Most Beautiful Soul</span>
+            <span className="landing-title__line2">One of The Most Beautiful Souls</span>
             <span className="landing-title__line3">In The Universe</span>
           </h1>
 
@@ -61,18 +61,18 @@ const LandingPage = () => {
 
           <p className={`landing-quote ${showContent ? 'show' : ''}`}>
             "Among many hearts in the world, yours feels like home to me.<br />
-            Among many souls in the world, mine belongs to you."
+            Thank you for being that friend — and so much more."
           </p>
 
           <p className={`landing-attribution ${showContent ? 'show' : ''}`}>
-            — Shashwat
+            — {CREATOR_NAME}
           </p>
 
           <button
             className={`landing-enter ${showButton ? 'show' : ''}`}
             onClick={() => navigate('/rose-day')}
           >
-            <span className="landing-enter__text">Begin Our Journey</span>
+            <span className="landing-enter__text">Begin the Journey</span>
             <span className="landing-enter__arrow">♥</span>
             <div className="landing-enter__glow"></div>
           </button>

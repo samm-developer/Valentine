@@ -7,19 +7,19 @@ import NavigationArrow from '../components/NavigationArrow';
 import './DayPages.css';
 
 const kissTypes = [
-  { type: 'The Forehead Kiss', emoji: '😇', desc: 'A kiss that says "I respect you, I protect you, I cherish you." It\'s the most innocent kiss with the deepest meaning — pure, tender, and eternal.' },
-  { type: 'The Surprise Kiss', emoji: '😘', desc: 'That unexpected moment when I steal a kiss on your cheek while you\'re mid-sentence. Your blush? Worth more than a thousand sunsets.' },
-  { type: 'The Goodbye Kiss', emoji: '🥺', desc: 'The hardest kiss — because it means I have to let go for a while. But every goodbye kiss carries a promise: "I\'ll be back. Always."' },
-  { type: 'The Good Morning Kiss', emoji: '🌅', desc: 'Soft lips, sleepy eyes, messy hair. The first kiss of the day — when the world is still quiet, and all I can hear is your heartbeat next to mine.' },
-  { type: 'The "I Love You" Kiss', emoji: '💖', desc: 'The kiss that happens mid-sentence because the words "I love you" aren\'t enough. When actions speak louder, my lips do the talking.' },
-  { type: 'The Forever Kiss', emoji: '♾️', desc: 'Not measured in seconds. Measured in lifetimes. The kiss that says: "In every universe, in every life, I would find you and kiss you again."' },
+  { type: 'The Cheek Kiss', emoji: '😇', desc: 'The classic friend kiss — a quick peck on the cheek that says "I\'m so glad to see you!" Pure, warm, and the way friends show affection in so many places.' },
+  { type: 'The Surprise Hug-Kiss', emoji: '😘', desc: 'That unexpected moment when we greet each other with a hug and a cheek kiss. Your smile? Worth more than a thousand sunsets.' },
+  { type: 'The Goodbye Kiss', emoji: '🥺', desc: 'The bittersweet one — because it means we have to part for a while. But every goodbye carries a promise: "I\'ll be back. Always. Text me!"' },
+  { type: 'The Celebratory Kiss', emoji: '🌅', desc: 'The one we share when something amazing happens — a success, a laugh, a moment worth celebrating. Friends lift each other up, and sometimes that includes a joyful cheek kiss!' },
+  { type: 'The "You\'re Amazing" Kiss', emoji: '💖', desc: 'The gesture that happens when words aren\'t enough. A quick kiss on the cheek that says: "I\'m so proud of you" or "Thank you for being you."' },
+  { type: 'The Friendship Kiss', emoji: '♾️', desc: 'Not measured in seconds. Measured in years of friendship. The kind of warm greeting that says: "You\'re one of my people. I\'m so glad we\'re friends."' },
 ];
 
 const quotes = [
-  { quote: "A kiss is the shortest distance between two hearts. And when I kiss you, the distance doesn't just disappear — the whole universe collapses into just us.", author: "Infinite Closeness" },
-  { quote: "I have kissed the edges of your name in my prayers. I have kissed the thought of you in my dreams. But nothing compares to the real thing.", author: "Dream To Reality" },
-  { quote: "If I could bottle the feeling of your kiss, it would be the most expensive perfume in the world — intoxicating, addictive, and utterly unforgettable.", author: "Bottled Love" },
-  { quote: "Every love story has a first kiss. Ours wasn't just a kiss — it was a declaration, a promise, a beginning of something that will never end.", author: "Our Beginning" },
+  { quote: "A friendly kiss on the cheek is the shortest way to say 'I care about you' without a single word. And when we greet each other that way, the distance between us disappears.", author: "Warm Greetings" },
+  { quote: "I've missed our catch-ups, our laughs, our silly moments. And when we meet again, you can bet there'll be a hug and a cheek kiss waiting for you.", author: "Reunion Joy" },
+  { quote: "If I could bottle the feeling of reconnecting with a good friend, it would be the best feeling in the world — comforting, joyful, and utterly unforgettable.", author: "Friendship in a Bottle" },
+  { quote: "Every great friendship has those little moments — a cheek kiss hello, a hug goodbye. Ours is full of them, and I wouldn't have it any other way.", author: "Our Bond" },
 ];
 
 const KissDay = () => {
@@ -50,7 +50,7 @@ const KissDay = () => {
           icon="💋"
           date="February 13th"
           title="Kiss Day"
-          subtitle="Where words end and love begins — on the edge of two lips"
+          subtitle="Where friendship shows itself — in warm greetings and cheek kisses"
           gradient1="#ef5350"
           gradient2="#b71c1c"
         />
@@ -58,15 +58,15 @@ const KissDay = () => {
         <div className="day-content">
           <div className="day-section day-section--intro">
             <p className="day-intro-text">
-              A kiss is the language of love that needs no translation.
-              It speaks fluently in every language, crosses every boundary,
-              and carries more emotion than a thousand love letters combined.
-              Here is my vocabulary of love — written on your lips.
+              A friendly kiss on the cheek is a universal language of warmth.
+              It speaks of care, of joy, of "I'm so glad to see you" —
+              the kind of gesture that needs no translation.
+              Here's to the small ways friends show they care.
             </p>
           </div>
 
           <div className="day-section">
-            <h2 className="day-section__title">The Language of Lips</h2>
+            <h2 className="day-section__title">The Language of Friendship</h2>
             <div className="kiss-grid">
               {kissTypes.map((kiss, i) => (
                 <div
@@ -86,7 +86,7 @@ const KissDay = () => {
           </div>
 
           <div className="day-section">
-            <h2 className="day-section__title">Whispered Between Kisses</h2>
+            <h2 className="day-section__title">From the Heart</h2>
             <div className="quotes-grid">
               {quotes.map((q, i) => (
                 <div
@@ -107,12 +107,12 @@ const KissDay = () => {
               <span className="special-message__icon">💋</span>
               <p className="special-message__text">
                 "If words are the dress of thoughts,<br />
-                then a kiss is the undressing of the soul.<br /><br />
-                And when I kiss you,<br />
-                every wall I've built comes crashing down —<br />
-                leaving nothing but raw, beautiful, untamed love."
+                then a warm greeting is the smile of friendship.<br /><br />
+                And when we meet,<br />
+                every worry fades for a moment —<br />
+                leaving nothing but joy, laughter, and the comfort of a true friend."
               </p>
-              <span className="special-message__signature">— Lips That Speak Your Name</span>
+              <span className="special-message__signature">— Your Friend Always</span>
             </div>
           </div>
 

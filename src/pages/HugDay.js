@@ -7,19 +7,19 @@ import NavigationArrow from '../components/NavigationArrow';
 import './DayPages.css';
 
 const hugTypes = [
-  { type: 'The Tight Hug', emoji: '🤗', desc: 'The kind where I pull you so close that our heartbeats sync. Where the world stops and it\'s just us — wrapped in warmth, drowning in love.', when: 'When I miss you more than words can say' },
-  { type: 'The Surprise Hug', emoji: '🫢', desc: 'The one I give from behind when you\'re not expecting it. Arms wrapping around you like a love ambush. Your startled laugh — my favorite soundtrack.', when: 'When I can\'t resist your cuteness' },
-  { type: 'The Comfort Hug', emoji: '🫂', desc: 'Soft, slow, and silent. The hug that says "I\'m here" without a single word. My hands rubbing your back, my heartbeat telling you everything will be okay.', when: 'When the world is too heavy for you' },
-  { type: 'The Spinning Hug', emoji: '🌀', desc: 'The one where I lift you up and spin — because my joy at seeing you is so overwhelming that gravity alone can\'t contain it.', when: 'When I see you after being apart' },
-  { type: 'The Forehead Hug', emoji: '😌', desc: 'My arms around you, my lips on your forehead. A hug that whispers, "You are safe, you are cherished, you are the most important person in my universe."', when: 'When I want you to feel deeply loved' },
-  { type: 'The Never-Let-Go Hug', emoji: '♾️', desc: 'The kind that has no end. Where every second we hold on, we fall deeper. Where letting go isn\'t an option, because my arms were made to hold you.', when: 'Every moment of forever' },
+  { type: 'The Tight Hug', emoji: '🤗', desc: 'The kind where we squeeze each other tight. Where the world stops and it\'s just us — wrapped in warmth, reminded that we\'re not alone.', when: 'When I miss you more than words can say' },
+  { type: 'The Surprise Hug', emoji: '🫢', desc: 'The one I give from behind when you\'re not expecting it. Arms wrapping around you like a friendship ambush. Your startled laugh — my favorite soundtrack.', when: 'When we reunite after time apart' },
+  { type: 'The Comfort Hug', emoji: '🫂', desc: 'Soft, slow, and silent. The hug that says "I\'m here" without a single word. A shoulder to lean on when everything feels too heavy.', when: 'When the world is too heavy for you' },
+  { type: 'The Spinning Hug', emoji: '🌀', desc: 'The one where we spin with joy — because seeing you after being apart makes everything feel a little lighter.', when: 'When we see each other after being apart' },
+  { type: 'The Supportive Hug', emoji: '😌', desc: 'My arms around you. A hug that whispers, "You are safe, you are valued, you matter to me." The kind friends give when words aren\'t enough.', when: 'When you need to feel supported' },
+  { type: 'The Never-Let-Go Hug', emoji: '♾️', desc: 'The kind that says "I\'ve got you." Where letting go feels impossible because sometimes a friend\'s embrace is exactly what we need.', when: 'When you need a friend to hold on to' },
 ];
 
 const quotes = [
-  { quote: "A hug from you doesn't just warm my body — it sets fire to my soul. It's the kind of warmth that no winter can ever take away.", author: "Warmth Eternal" },
-  { quote: "They say home is where the heart is. My heart is wherever your arms are. So wrap them around me, and I'm already home.", author: "Home In You" },
-  { quote: "I don't need medicine when I'm hurting. I just need your arms. Your hug is the cure to everything that ails my restless heart.", author: "My Healing" },
-  { quote: "If I could freeze time, I'd freeze it in the middle of our longest hug — where nothing else exists except the rhythm of two hearts beating as one.", author: "Frozen In Love" },
+  { quote: "A hug from you doesn't just warm my body — it reminds me I'm not alone. It's the kind of warmth that no winter can ever take away.", author: "Warmth Eternal" },
+  { quote: "They say home is where the heart is. Sometimes home is a friend's arms when you need one. So wrap them around me, and I feel at peace.", author: "Safe Space" },
+  { quote: "I don't need much when I'm hurting. I just need a friend. Your hug is the reminder that everything will be okay.", author: "My Comfort" },
+  { quote: "If I could freeze time, I'd freeze it in the middle of our longest hug — where nothing else exists except the comfort of a true friend.", author: "Frozen In Joy" },
 ];
 
 const HugDay = () => {
@@ -58,9 +58,9 @@ const HugDay = () => {
         <div className="day-content">
           <div className="day-section day-section--intro">
             <p className="day-intro-text">
-              Science says a 20-second hug releases oxytocin and makes you feel loved.
-              But when I hug you, the universe itself seems to exhale — as if the cosmos
-              has been waiting for this moment where two hearts finally become one.
+              Science says a 20-second hug releases oxytocin and makes you feel connected.
+              But when I hug you, it feels like the universe is reminding us — some bonds
+              transcend words. A good friend's embrace says everything we need to hear.
             </p>
           </div>
 
@@ -112,10 +112,10 @@ const HugDay = () => {
                 "Right now, close your eyes for a moment.<br />
                 Take a deep breath.<br />
                 Feel it? That warmth around your heart?<br /><br />
-                That's me — hugging your soul from wherever I am.<br />
-                Distance means nothing when love is this strong."
+                That's me — sending you a virtual hug from wherever I am.<br />
+                Distance means nothing when friendship is this strong."
               </p>
-              <span className="special-message__signature">— Always Holding You Close</span>
+              <span className="special-message__signature">— Always Here For You</span>
             </div>
           </div>
 

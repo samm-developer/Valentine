@@ -8,18 +8,18 @@ import './DayPages.css';
 
 const teddyTraits = [
   { trait: 'Always There', icon: '🧸', desc: 'Like a teddy bear that sits by your side through every storm, I promise to always be there — silently, steadily, and without fail.' },
-  { trait: 'Warm Hugs', icon: '🤗', desc: 'A teddy gives the kind of hug that makes the world disappear. That\'s exactly what I want my love to feel like for you.' },
+  { trait: 'Warm Hugs', icon: '🤗', desc: 'A teddy gives the kind of hug that makes the world disappear. That\'s exactly what I want our friendship to feel like for you.' },
   { trait: 'Soft & Gentle', icon: '💗', desc: 'In a world that can be rough, I want to be your softness — your gentle place to fall, your comfort at the end of a hard day.' },
-  { trait: 'Never Judges', icon: '🌙', desc: 'A teddy loves you at your best and at your worst. And so do I — completely, unconditionally, without a single hesitation.' },
+  { trait: 'Never Judges', icon: '🌙', desc: 'A teddy is there for you at your best and at your worst. And so am I — completely, without judgment, whenever you need me.' },
   { trait: 'Keeps Secrets', icon: '🤫', desc: 'Tell me your wildest dreams, your deepest fears, your silliest thoughts. I\'ll hold them all close — just like a teddy holds your midnight whispers.' },
-  { trait: 'Forever Loyal', icon: '💎', desc: 'Teddies don\'t leave. They don\'t give up. They stay. And that\'s exactly the kind of love I\'m giving you — the staying kind.' },
+  { trait: 'Forever Loyal', icon: '💎', desc: 'Teddies don\'t leave. They don\'t give up. They stay. And that\'s exactly the kind of friend I am — the staying kind.' },
 ];
 
 const quotes = [
-  { quote: "You don't need a teddy bear when you have someone who holds you tighter, loves you harder, and stays longer than any stuffed toy ever could. That someone is me.", author: "Your Human Teddy" },
-  { quote: "I may not be soft and fluffy, but I promise my love is — gentle enough to heal your wounds and strong enough to protect your heart.", author: "Gentle Love" },
-  { quote: "A teddy bear is a friend you hug and never want to let go. You, my love, are the person I hug and never want to release from my arms.", author: "Holding On" },
-  { quote: "In the museum of my heart, you sit on the highest shelf — not because you're out of reach, but because you're the most precious thing I own.", author: "Treasured" },
+  { quote: "You don't need a teddy bear when you have a friend who's got your back, listens when you need to vent, and stays longer than any stuffed toy ever could. That friend is me.", author: "Your Human Teddy" },
+  { quote: "I may not be soft and fluffy, but I promise my friendship is — gentle enough to be a safe space and strong enough to have your back.", author: "Gentle Support" },
+  { quote: "A teddy bear is a friend you hug and never want to let go. You're the person I'm grateful to call my friend — and that means everything.", author: "Holding On" },
+  { quote: "In the museum of my heart, you have a special place — not because you're out of reach, but because you're one of the most precious people in my life.", author: "Treasured" },
 ];
 
 const TeddyDay = () => {
@@ -50,7 +50,7 @@ const TeddyDay = () => {
           icon="🧸"
           date="February 10th"
           title="Teddy Day"
-          subtitle="A warm, soft love that never lets go"
+          subtitle="A warm, soft friendship that never lets go"
           gradient1="#ff8a65"
           gradient2="#e64a19"
         />
@@ -59,8 +59,8 @@ const TeddyDay = () => {
           <div className="day-section day-section--intro">
             <p className="day-intro-text">
               A teddy bear is the first thing we hold when the world feels too big.
-              You, my love, are the person I want to hold when the world feels too much.
-              You are my comfort, my calm, my forever home.
+              You, my friend, are the person I want to turn to when the world feels too much.
+              You are my comfort, my calm, my safe place.
             </p>
           </div>
 
@@ -104,12 +104,12 @@ const TeddyDay = () => {
             <div className="special-message special-message--teddy">
               <span className="special-message__icon">🧸</span>
               <p className="special-message__text">
-                "I wish I could shrink myself into a teddy bear<br />
-                so you could hold me close every single night,<br />
-                and I could whisper 'I love you'<br />
-                every time you squeeze me tight."
+                "I wish I could shrink into a teddy<br />
+                so you could have a friend close whenever you need one,<br />
+                and I could remind you you're not alone<br />
+                every time life gets a little heavy."
               </p>
-              <span className="special-message__signature">— Your Cuddle Partner Forever</span>
+              <span className="special-message__signature">— Your Friend Always</span>
             </div>
           </div>
 
