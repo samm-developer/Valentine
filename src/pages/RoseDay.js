@@ -9,10 +9,10 @@ import './DayPages.css';
 const roseColors = [
   { color: 'Red Rose', emoji: '🌹', meaning: 'Deep love & passion', hex: '#e8416f' },
   { color: 'Pink Rose', emoji: '🌸', meaning: 'Grace, gratitude & admiration', hex: '#f8bbd0' },
-  { color: 'White Rose', emoji: '🤍', meaning: 'Pure love & new beginnings', hex: '#fff8f0' },
-  { color: 'Yellow Rose', emoji: '💛', meaning: 'Friendship & joy', hex: '#ffd700' },
-  { color: 'Lavender Rose', emoji: '💜', meaning: 'Enchantment & love at first sight', hex: '#e8d5f5' },
-  { color: 'Orange Rose', emoji: '🧡', meaning: 'Desire & enthusiasm', hex: '#ff8c42' },
+  { color: 'White Rose', emoji: '💮', meaning: 'Pure love & new beginnings', hex: '#fff8f0' },
+  { color: 'Yellow Rose', emoji: '🌼', meaning: 'Friendship & joy', hex: '#ffd700' },
+  { color: 'Lavender Rose', emoji: '🪻', meaning: 'Magic in a single glance', hex: '#e8d5f5' },
+  { color: 'Orange Rose', emoji: '🏵️', meaning: 'Desire & enthusiasm', hex: '#ff8c42' },
 ];
 
 const quotes = [
@@ -76,7 +76,7 @@ const RoseDay = () => {
           icon="🌹"
           date="February 7th"
           title="Rose Day"
-          subtitle="Where love begins to bloom — one petal at a time"
+          subtitle="Where love is gifted in shades of roses — a petal at a time"
           gradient1="#e8416f"
           gradient2="#c2185b"
         />
@@ -85,9 +85,8 @@ const RoseDay = () => {
           {/* Opening */}
           <div className="day-section day-section--intro">
             <p className="day-intro-text">
-              Every love story has a beginning. Ours started the moment I first saw you —
-              and just like a rose unfurling in the morning sun, my heart opened up
-              to a love I never knew existed.
+              Every story has a beginning. Ours started the moment I first saw your picture —
+              and just like a rose unfurling in the morning sun, My heart opened to a unique rose.
             </p>
           </div>
 
@@ -113,7 +112,7 @@ const RoseDay = () => {
               ))}
             </div>
             <p className="day-section__note">
-              But for you, I'd give every color — because you deserve all the love in the universe.
+              But for you, I'd give every color — because you deserve all the roses in the universe.
             </p>
           </div>
 

@@ -48,7 +48,7 @@ const LandingPage = () => {
           <h1 className={`landing-title ${showContent ? 'show' : ''}`}>
             <span className="landing-title__line1">For {RECIPIENT_NAME},</span>
             <span className="landing-title__line2">The Most Beautiful Soul</span>
-            <span className="landing-title__line3">In My Universe</span>
+            <span className="landing-title__line3">In The Universe</span>
           </h1>
 
           <div className={`landing-divider ${showContent ? 'show' : ''}`}>
@@ -60,12 +60,12 @@ const LandingPage = () => {
           </div>
 
           <p className={`landing-quote ${showContent ? 'show' : ''}`}>
-            "In all the world, there is no heart for me like yours.<br />
-            In all the world, there is no love for you like mine."
+            "Among many hearts in the world, yours feels like home to me.<br />
+            Among many souls in the world, mine belongs to you."
           </p>
 
           <p className={`landing-attribution ${showContent ? 'show' : ''}`}>
-            — Maya Angelou
+            — Shashwat
           </p>
 
           <button
@@ -78,7 +78,7 @@ const LandingPage = () => {
           </button>
 
           <p className={`landing-attribution landing-crafted ${showButton ? 'show' : ''}`}>
-            Crafted with ♥ by {CREATOR_NAME} for {RECIPIENT_NAME}
+            Made with love by {CREATOR_NAME} ♥
           </p>
 
           {/* Valentine Week Quick Links */}
