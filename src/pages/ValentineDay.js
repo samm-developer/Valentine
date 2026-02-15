@@ -65,6 +65,7 @@ const ValentineDay = () => {
   };
 
   const sections = [
+    { icon: '🖼️', title: 'Memories', desc: 'The story in frames — the moment you shared', path: '/memories' },
     { icon: '💌', title: 'A Letter For You', desc: 'A heartfelt message, typed word by word from my heart', path: '/letter' },
     { icon: '💖', title: 'Reasons You\'re Amazing', desc: 'Every reason I\'m grateful to call you my friend', path: '/reasons' },
     { icon: '🤞', title: 'My Promises', desc: 'Promises written in the language of friendship', path: '/promises' },
@@ -136,7 +137,7 @@ const ValentineDay = () => {
                 </div>
 
                 <h2 className="valentine-question__text">
-                  Will You Be My Valentine Friend?
+                  Will You Be My Valentine?
                 </h2>
 
                 <div className="valentine-buttons">

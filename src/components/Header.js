@@ -5,6 +5,7 @@ import './Header.css';
 
 const days = [
   { path: '/', label: 'Home', icon: '💕', date: '', short: 'Home' },
+  { path: '/memories', label: 'Memories', icon: '🖼️', date: '', short: 'Memories' },
   { path: '/rose-day', label: 'Rose Day', icon: '🌹', date: 'Feb 7', short: 'Rose' },
   { path: '/propose-day', label: 'Propose Day', icon: '💍', date: 'Feb 8', short: 'Propose' },
   { path: '/chocolate-day', label: 'Chocolate Day', icon: '🍫', date: 'Feb 9', short: 'Chocolate' },

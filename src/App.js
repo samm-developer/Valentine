@@ -15,6 +15,7 @@ import PromiseDay from './pages/PromiseDay';
 import HugDay from './pages/HugDay';
 import KissDay from './pages/KissDay';
 import ValentineDay from './pages/ValentineDay';
+import MemoriesPage from './pages/MemoriesPage';
 import './App.css';
 
 // Scroll to top on route change
@@ -46,6 +47,7 @@ function App() {
           <Route path="/hug-day" element={<HugDay />} />
           <Route path="/kiss-day" element={<KissDay />} />
           <Route path="/valentine-day" element={<ValentineDay />} />
+          <Route path="/memories" element={<MemoriesPage />} />
         </Routes>
       </div>
     </Router>

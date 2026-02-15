@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import FloatingHearts from '../components/FloatingHearts';
 import PageTransition from '../components/PageTransition';
 import { CREATOR_NAME, RECIPIENT_NAME } from '../config';
+import { getFeaturedImages } from '../data/galleryImages';
 import './LandingPage.css';
 
 const LandingPage = () => {
@@ -106,6 +107,29 @@ const LandingPage = () => {
                 </button>
               ))}
             </div>
+          </div>
+
+          {/* Our Moments - Featured Photos */}
+          <div className={`landing-moments ${showButton ? 'show' : ''}`}>
+            <p className="landing-moments__label">Our Moments</p>
+            <div className="landing-moments__grid">
+              {getFeaturedImages().map((img, i) => (
+                <button
+                  key={img.id}
+                  className="landing-moments__card"
+                  onClick={() => navigate('/memories')}
+                  style={{ animationDelay: `${3 + i * 0.1}s` }}
+                >
+                  <img src={img.src} alt={img.caption} className="landing-moments__img" />
+                  <div className="landing-moments__overlay">
+                    <span className="landing-moments__caption">"{img.caption}"</span>
+                  </div>
+                </button>
+              ))}
+            </div>
+            <button className="landing-moments__btn" onClick={() => navigate('/memories')}>
+              View All Memories 🖼️
+            </button>
           </div>
         </div>
       </PageTransition>

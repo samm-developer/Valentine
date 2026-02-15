@@ -1,12 +1,14 @@
 .landing-page {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   background: radial-gradient(ellipse at center, #1a0a1e 0%, #0d0510 50%, #050208 100%);
   padding-top: 65px;
+  padding-bottom: 60px;
 }
 
 /* Stars */
@@ -354,6 +356,123 @@
   opacity: 0.6;
 }
 
+/* Our Moments - Featured Photos */
+.landing-moments {
+  margin-top: 55px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(232, 65, 111, 0.08);
+  opacity: 0;
+  transform: translateY(25px);
+  transition: all 0.9s ease 3s;
+}
+
+.landing-moments.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.landing-moments__label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.8rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 22px;
+  opacity: 0.7;
+}
+
+.landing-moments__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  max-width: 480px;
+  margin: 0 auto 24px;
+}
+
+.landing-moments__card {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(232, 65, 111, 0.15);
+  cursor: pointer;
+  padding: 0;
+  background: #0d0510;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  animation: momentsCardIn 0.6s ease forwards;
+}
+
+@keyframes momentsCardIn {
+  from { opacity: 0; transform: scale(0.85); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.landing-moments__card:hover {
+  transform: scale(1.06);
+  border-color: rgba(232, 65, 111, 0.4);
+  box-shadow: 0 12px 40px rgba(232, 65, 111, 0.2);
+}
+
+.landing-moments__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.landing-moments__card:hover .landing-moments__img {
+  transform: scale(1.1);
+}
+
+.landing-moments__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(5, 2, 8, 0.9) 0%, transparent 60%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 12px 8px;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.landing-moments__card:hover .landing-moments__overlay {
+  opacity: 1;
+}
+
+.landing-moments__caption {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 0.7rem;
+  color: var(--cream);
+  text-align: center;
+  line-height: 1.3;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+.landing-moments__btn {
+  padding: 12px 28px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(232, 65, 111, 0.25);
+  border-radius: 50px;
+  color: var(--cream);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.landing-moments__btn:hover {
+  background: rgba(232, 65, 111, 0.15);
+  border-color: var(--rose);
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(232, 65, 111, 0.2);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .landing-title.show .landing-title__line1 { font-size: 1.5rem; }
@@ -364,4 +483,6 @@
   .landing-week__days { gap: 6px; }
   .landing-week__day { padding: 8px 10px; }
   .landing-week__day-icon { font-size: 1.2rem; }
+  .landing-moments__grid { grid-template-columns: repeat(2, 1fr); max-width: 320px; gap: 12px; }
+  .landing-moments__caption { font-size: 0.65rem; }
 }
