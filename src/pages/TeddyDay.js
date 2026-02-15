@@ -109,7 +109,7 @@ const TeddyDay = () => {
                 and I could remind you you're not alone<br />
                 every time life gets a little heavy."
               </p>
-              <span className="special-message__signature">— Your Friend Always</span>
+              <span className="special-message__signature">— Your valentine always</span>
             </div>
           </div>
 

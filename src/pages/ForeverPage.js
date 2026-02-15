@@ -229,18 +229,18 @@ const ForeverPage = () => {
                 </div>
                 <div className="vow-card">
                   <span>♾️</span>
-                  <p>Every step of the way, your friend forever</p>
+                  <p>Every step of the way, your valentine forever</p>
                 </div>
               </div>
 
               <div className="celebration__final">
-                <p className="celebration__together">{RECIPIENT_NAME} + {CREATOR_NAME} = Best Friends ♾️</p>
+                <p className="celebration__together">{RECIPIENT_NAME} + {CREATOR_NAME} = Valentine ♾️</p>
                 <p className="celebration__date">14th February 2026</p>
                 <p className="celebration__forever">
                   "This is not the end of a story.<br />
                   This is the beginning of a beautiful friendship."
                 </p>
-                <p className="celebration__signature">— Your friend always, {CREATOR_NAME} ♥</p>
+                <p className="celebration__signature">— Your valentine always, {CREATOR_NAME} ♥</p>
               </div>
             </div>
           )}

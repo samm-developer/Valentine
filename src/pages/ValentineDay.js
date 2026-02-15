@@ -186,7 +186,7 @@ const ValentineDay = () => {
               </div>
 
               <div className="vc-final">
-                <p className="vc-together">Best Friends ♾️</p>
+                <p className="vc-together">Valentine ♾️</p>
                 <p className="vc-date">14th February 2026</p>
                 <p className="vc-forever">
                   "This is not the end of a story.<br />

@@ -21,7 +21,7 @@ If I had to describe what you mean to me in one sentence — I'd say you're the 
 
 Today, tomorrow, and for all the tomorrows after that — I'm grateful for you.
 
-Your friend always,
+Your valentine always,
 ${CREATOR_NAME} ♥`;
 
 const LetterPage = () => {

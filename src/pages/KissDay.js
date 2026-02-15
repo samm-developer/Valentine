@@ -112,7 +112,7 @@ const KissDay = () => {
                 every worry fades for a moment —<br />
                 leaving nothing but joy, laughter, and the comfort of a true friend."
               </p>
-              <span className="special-message__signature">— Your Friend Always</span>
+              <span className="special-message__signature">— Your valentine always</span>
             </div>
           </div>
 

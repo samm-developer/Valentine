@@ -113,7 +113,7 @@ const PromisesPage = () => {
                 and delivered with genuine care for our friendship."
               </p>
               <div className="promises-oath__signature">
-                ~ Your Friend Always, {CREATOR_NAME} ~
+                ~ Your valentine always, {CREATOR_NAME} ~
               </div>
             </div>
           </div>
